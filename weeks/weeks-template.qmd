@@ -1,0 +1,27 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+format: html
+---
+
+## Readings
+
+| 📖
+
+### Reference
+
+### Social science readings
+
+## Slides
+
+## Videos
+
+| 🖥️
+
+## Assignments
+
+| ✍️
+
+| 📘
+
+| 🧮
