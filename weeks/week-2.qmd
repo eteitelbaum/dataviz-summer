@@ -20,11 +20,11 @@ subtitle: The Grammar of Graphics
 
 ## Modules
 
-| [Module 2.1](/modules/module-2.1.html)--Working with Flat Files
-| [Module 2.2](/modules/module-2.2.html)--Working with APIs
+| [Module 2.1](/modules/module-2.1.qmd)--Working with Flat Files
+| [Module 2.2](/modules/module-2.2.qmd)--Working with APIs
 
 ## Assignments
 
-| [📘](https://blackboard.gwu.edu/ultra/courses/_387298_1/outline "Quiz 1") Quiz 1
-| [📘](https://blackboard.gwu.edu/ultra/courses/_387298_1/outline "Quiz 2") Quiz 2
-| 🧮 [Coding Assignment 2](/assignments/coding-assignment-2.html)
+| 📘 [Quiz 3]()
+| 📘 [Quiz 4]()
+| 🧮 [Coding Assignment 2](/assignments/coding-assignment-2.qmd)

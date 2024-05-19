@@ -26,11 +26,11 @@ Representation](https://link-springer-com.proxygw.wrlc.org/article/10.1057/palgr
 
 ## Modules
 
-| [Module 1.1](/modules/module-1.1.html)--Working with Flat Files
-| [Module 1.2](/modules/module-1.2.html)--Working with APIs
+| [Module 1.1](/modules/module-1.1.qmd)--Working with Flat Files
+| [Module 1.2](/modules/module-1.2.qmd)--Working with APIs
 
 ## Assignments
 
-| [📘](https://blackboard.gwu.edu/ultra/courses/_387298_1/outline "Quiz 1") Quiz 1
-| [📘](https://blackboard.gwu.edu/ultra/courses/_387298_1/outline "Quiz 2") Quiz 2
-| 🧮 [Coding Assignment 1](/assignments/coding-assignment-1.html)
+| 📘 [Quiz 1](https://blackboard.gwu.edu/ultra/courses/_403469_1/outline/assessment/test/_13875422_1?courseId=_403469_1&gradeitemView=details)
+| 📘 [Quiz 2]()
+| 🧮 [Coding Assignment 1](/assignments/coding-assignment-1.qmd)

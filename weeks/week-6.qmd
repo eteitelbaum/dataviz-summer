@@ -2,3 +2,7 @@
 title: Week 6
 subtitle: Final Project
 ---
+
+## Assignments
+
+| :writing_hand: [Project Assignment 3](/project/project-assignment-3.qmd)

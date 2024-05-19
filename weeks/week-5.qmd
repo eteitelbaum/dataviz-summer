@@ -2,3 +2,19 @@
 title: Week 5
 subtitle: Interactive Apps
 ---
+
+## Readings
+
+| 📖 [Fearon & Laitin](https://www.jstor.org/stable/3118222)
+
+## Modules
+
+| [Module 5.1](/modules/module-5.1.qmd)--Choropleth Maps
+| [Module 5.2](/modules/module-5.2.qmd)--Leaflet Maps
+
+## Assignments
+
+| 📘 [Quiz 9]()
+| 📘 [Quiz 10]()
+| 🧮 [Coding Assignment 5](/assignments/coding-assignment-5.qmd)
+| :writing_hand: [Project Assignment 2](/project/project-assignment-2.qmd)

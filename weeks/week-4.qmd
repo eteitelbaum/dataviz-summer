@@ -1,4 +1,21 @@
 ---
 title: Week 4
 subtitle: Tables
+from: markdown+emoji
 ---
+
+## Readings
+
+| 📖 [Fearon & Laitin](https://www.jstor.org/stable/3118222)
+
+## Modules
+
+| [Module 4.1](/modules/module-4.1.qmd)--Choropleth Maps
+| [Module 4.2](/modules/module-4.2.qmd)--Leaflet Maps
+
+## Assignments
+
+| 📘 [Quiz 7]()
+| 📘 [Quiz 8]()
+| 🧮 [Coding Assignment 4](/assignments/coding-assignment-4.qmd)
+| :writing_hand: [Project Assignment 1](/project/project-assignment-1.qmd)

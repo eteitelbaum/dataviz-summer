@@ -2,3 +2,18 @@
 title: Week 3
 subtitle: Making Maps
 ---
+
+## Readings
+
+| 📖 Ross, *The Oil Curse*, [Chapter 3](https://www-jstor-org.proxygw.wrlc.org/stable/j.ctt7s3wz.10)
+
+## Modules
+
+| [Module 3.1](/modules/module-3.1.qmd)--Choropleth Maps
+| [Module 3.2](/modules/module-3.2.qmd)--Leaflet Maps
+
+## Assignments
+
+| 📘 [Quiz 5]()
+| 📘 [Quiz 6]()
+| 🧮 [Coding Assignment 3](/assignments/coding-assignment-3.qmd)
