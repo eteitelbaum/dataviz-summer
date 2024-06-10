@@ -492,23 +492,23 @@ Prework
 <span><span class="va">world_map_df</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">geometry</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Simple feature collection with 240 features and 0 fields
+<pre><code>Simple feature collection with 241 features and 0 fields
 Geometry type: MULTIPOLYGON
 Dimension:     XY
 Bounding box:  xmin: -180 ymin: -58.49229 xmax: 180 ymax: 83.59961
-Geodetic CRS:  +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0
+Geodetic CRS:  WGS 84
 First 10 features:
                          geometry
-1  MULTIPOLYGON (((-69.89912 1...
-2  MULTIPOLYGON (((74.89131 37...
-3  MULTIPOLYGON (((14.19082 -5...
-4  MULTIPOLYGON (((-63.00122 1...
-5  MULTIPOLYGON (((20.06396 42...
-6  MULTIPOLYGON (((20.61133 60...
-7  MULTIPOLYGON (((1.706055 42...
-8  MULTIPOLYGON (((53.92783 24...
-9  MULTIPOLYGON (((-64.54917 -...
-10 MULTIPOLYGON (((45.55234 40...</code></pre>
+1  MULTIPOLYGON (((31.28789 -2...
+2  MULTIPOLYGON (((30.39609 -1...
+3  MULTIPOLYGON (((53.08564 16...
+4  MULTIPOLYGON (((104.064 10....
+5  MULTIPOLYGON (((-60.82119 9...
+6  MULTIPOLYGON (((12.43916 41...
+7  MULTIPOLYGON (((166.7458 -1...
+8  MULTIPOLYGON (((70.94678 42...
+9  MULTIPOLYGON (((-53.37061 -...
+10 MULTIPOLYGON (((162.9832 5....</code></pre>
 </div>
 </div>
 </section><section id="make-a-map-with-geom_sf" class="level3"><h3 class="anchored" data-anchor-id="make-a-map-with-geom_sf">Make a map with geom_sf()</h3>
@@ -529,7 +529,7 @@ First 10 features:
 </section><section id="beautify-your-map" class="level3"><h3 class="anchored" data-anchor-id="beautify-your-map">Beautify your map</h3>
 <p>The default ggplot settings are pretty good for a preview, but we could make it look a lot better. Let’s add some labels, a <code>ggtheme</code> map theme and the default <code>viridis</code> color mapping.</p>
 <div class="cell" data-crop="true">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">world_map_df</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">income_grp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
@@ -538,7 +538,7 @@ First 10 features:
 <span>    fill <span class="op">=</span> <span class="st">"Category"</span></span>
 <span>    <span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_d</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span>    <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><img src="module-3.1_files/figure-html/beautify_map-1.png" class="img-fluid figure-img" width="672"></p>
@@ -573,14 +573,14 @@ Warning
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/everything.html">last_col</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">:</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/everything.html">last_col</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="co">#select last 5 columns of df</span></span>
 <span>  <span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 240
+<pre><code>Rows: 241
 Columns: 6
-$ date          &lt;dbl&gt; 2021, 2021, 2021, NA, 2021, NA, NA, 2021, 2021, 2021, 20…
-$ oil_rents_gdp &lt;dbl&gt; 0.00000000, 0.01786951, 28.27443988, NA, 1.04218369, NA,…
+$ date          &lt;dbl&gt; 2021, 2021, 2018, 2021, 2014, NA, 2021, 2021, 2021, NA, …
+$ oil_rents_gdp &lt;dbl&gt; 0.047768809, 0.000000000, 4.531310652, 0.669314215, 11.3…
 $ obs_status    &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
 $ footnote      &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
-$ last_updated  &lt;date&gt; 2024-03-28, 2024-03-28, 2024-03-28, NA, 2024-03-28, NA,…
-$ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-69.89912 1..., MULTIPOLYGO…</code></pre>
+$ last_updated  &lt;date&gt; 2024-05-30, 2024-05-30, 2024-05-30, 2024-05-30, 2024-05…
+$ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((31.28789 -2..., MULTIPOLYGO…</code></pre>
 </div>
 </div>
 <p>Now we can map these data. Everything here is pretty much the same as before, except we change the fill to <code>oil_rents_gdp</code>. We will also add a subtitle and make a few other cosmetic changes like shifting the position of the legend title, bolding the plot title and changing the <code>viridis</code> color scale from discrete to continuous.</p>
@@ -593,7 +593,7 @@ $ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-69.89912 1..., MULTIP
 <span>    fill <span class="op">=</span> <span class="st">"Percent"</span>, </span>
 <span>    caption <span class="op">=</span> <span class="st">"Source: World Bank Development Indicators"</span></span>
 <span>    <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span></span>
 <span>    legend.position <span class="op">=</span> <span class="st">"right"</span>, </span>
 <span>    <span class="co">#legend.title = element_text(size = 8),</span></span>
@@ -623,7 +623,7 @@ $ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-69.89912 1..., MULTIP
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/rnaturalearth/">rnaturalearth</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/nset-ornl/wbstats">wbstats</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">create_map</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">var_id</span>, <span class="va">title</span>, <span class="va">legend_title</span>, <span class="va">theme</span>, <span class="va">direction</span><span class="op">)</span><span class="op">{</span></span>
@@ -641,7 +641,7 @@ $ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-69.89912 1..., MULTIP
 <span>    fill <span class="op">=</span> <span class="va">legend_title</span>, <span class="co"># change legend title</span></span>
 <span>    caption <span class="op">=</span> <span class="st">"Source: World Bank Development Indicators"</span></span>
 <span>    <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span></span>
 <span>    plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span><span class="op">(</span>face <span class="op">=</span> <span class="st">"bold"</span><span class="op">)</span>,</span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
@@ -1264,7 +1264,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2023, <a href="https://emmanuel.teitelbaum.com">Emmanuel Teitelbaum</a></p>
+<p>© Copyright 2024, <a href="https://emmanuel.teitelbaum.com">Emmanuel Teitelbaum</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
