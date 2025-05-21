@@ -18,8 +18,6 @@ library(dplyr)
 
 dem_women <- read_csv("https://raw.githubusercontent.com/eteitelbaum/dataviz-summer-2023/main/modules/data/dem_women.csv")
 
-#options(digits = 3)
-
 dem_summary <- dem_women |> 
   group_by(country, region)  |> 
   summarize(
