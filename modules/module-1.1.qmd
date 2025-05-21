@@ -23,7 +23,6 @@ execute:
 :::
 
 ::: {.callout-note} 
-
 In this module, we will be using the `readr`, `tidyr` and `dplyr` packages from the Tidyverse. While we could just load the entire Tidyverse collection of packages (e.g. `library(tidyverse)`), it is generally better from a [performance standpoint](https://stackoverflow.com/questions/50257990/what-is-the-advantage-of-using-librarytidyverse-instead-of-sub-packages) to load the packages individually. Another reason to laod the packages separately is that it is good to be more intentional about which packages we are loading while we are learning them. 
 
 Also, note that in this module we will load the packages as we go along in various code chunks; but it is also possible to load all of the packages you will be using in a Quarto doc or R script in a single "setup" code chunk at the beginning of the file. You will see both workflows represented in this course.
