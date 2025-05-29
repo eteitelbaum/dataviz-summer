@@ -93,7 +93,7 @@ library(tidyr)
 # Reshape the data
 wb_data <- wb_data_messy |> # take wb_data_messy, and put it in wb_data, but first...
   pivot_longer(             # pivot the data from wide to long form
-    cols = `1972 [YR1972]`: `2021 [YR2021]`, # columns to pivot
+    cols = `1972 [YR1972]`: `2024 [YR2024]`, # columns to pivot
     names_to = "year", # name the first column "year"
     values_to = "flfp" # name the second column "flfp"
   ) 
