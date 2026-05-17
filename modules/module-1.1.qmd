@@ -84,6 +84,11 @@ The `pivot_longer()` function takes three basic arguments:
 
 In our case, we want to reshape all of the year columns and have the years represented in the rows. We want the newly created column to be called "year" and the values are going to represent the data on female labor force participation we downloaded (flfp).
 
+::: {.callout-note}
+## Updating the year range
+The video was recorded using data downloaded through 2021. If you downloaded your data today, your last column will be more recent (e.g. `2024 [YR2024]`). Update the end column in the `pivot_longer()` call below to match the last year column in your own dataset.
+:::
+
 ```{r}
 #| label: step3
 
@@ -93,7 +98,7 @@ library(tidyr)
 # Reshape the data
 wb_data <- wb_data_messy |> # take wb_data_messy, and put it in wb_data, but first...
   pivot_longer(             # pivot the data from wide to long form
-    cols = `1972 [YR1972]`: `2024 [YR2024]`, # columns to pivot
+    cols = `1972 [YR1972]`: `2021 [YR2021]`, # columns to pivot
     names_to = "year", # name the first column "year"
     values_to = "flfp" # name the second column "flfp"
   ) 
@@ -121,7 +126,7 @@ Now that our data are transposed, we can start to work on some other key issues.
 
 To fix this, we will use the [mutate()](https://dplyr.tidyverse.org/reference/mutate.html) and `mutate_at()` functions from `dplyr`. `mutate()` is used to transform variables and to create new ones while `mutate_at()` allow us to transform multiple columns at once. 
 
-First we call `mutate()` along with [substring()](https://www.statology.org/substring-function-in-r/) to truncate the year variable to only include the first four characters of the string. Then we call `mutate_at()` along with `as.numeric` to transform `year` and `flfp` to numeric variables.
+First we call `mutate()` along with [substring()](https://www.statology.org/substring-function-in-r/) to truncate the year variable to only include the first four characters of the string. Then we use `across()` inside another `mutate()` call to transform `year` and `flfp` to numeric variables.
 
 ```{r}
 #| label: step4
@@ -129,7 +134,7 @@ First we call `mutate()` along with [substring()](https://www.statology.org/subs
 # Fix year and flfp
 wb_data <- wb_data |> # replace wb_data with a modified version of the dataframe 
   mutate(year = substring(year, 1, 4)) |> # truncate year (keep first four characters)
-  mutate_at(c("year", "flfp"), as.numeric) # change year and flfp to numeric
+  mutate(across(c("year", "flfp"), as.numeric)) # change year and flfp to numeric
 
 # View the data
 glimpse(wb_data)
@@ -137,7 +142,7 @@ glimpse(wb_data)
 
 The last thing we are going to do is to fix the variable names. Specifically, we want to remove the spaces from the remaining variables and conver them from title case to snake case. To do this, we will use the `clean_names()` function from the `janitor` package. 
 
-As a final step, we can export our clean data to a new .csv file with the `write.csv()` function from `readr`. 
+As a final step, we can export our clean data to a new .csv file with the `write_csv()` function from `readr`. 
 
 ```{r}
 #| label: step5

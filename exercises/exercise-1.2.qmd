@@ -1,5 +1,6 @@
 ---
 title: "Exercise 1.2"
+engine: knitr
 format: html
 highlight-style: atom-one
 filters:

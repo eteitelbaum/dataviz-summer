@@ -1,0 +1,15 @@
+{
+  "hash": "b65a4d0ba09c0fb928d4873fb35a4903",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Quiz 1.2\"\nformat: html\nhighlight-style: atom-one\nfilters:\n  - webr\nexecute:\n  echo: true\n  message: false\n  warning: false\n---\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(readr)\nlibrary(dplyr)\n\ndem_women <- read_csv(\"https://raw.githubusercontent.com/eteitelbaum/dataviz-summer-2023/main/modules/data/dem_women.csv\")\n\ndem_summary <- dem_women |> \n  group_by(country, region)  |> \n  summarize(\n    polyarchy = mean(polyarchy, na.rm = TRUE),\n    gdp_pc = mean(gdp_pc, na.rm = TRUE), \n    flfp = mean(flfp, na.rm = TRUE), \n    women_rep = mean(women_rep, na.rm = TRUE)\n  ) |> \n  arrange(women_rep) \n\ndem_summary\n```\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

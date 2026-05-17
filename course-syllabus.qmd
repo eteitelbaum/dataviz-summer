@@ -133,9 +133,7 @@ The following assessments help you gauge and demonstrate your progress in the co
 
 -   **Assignments**: You will develop various skills through regular assignments. You are expected to one coding assignment per week. Thoughtfully completing weekly assignments helps you meet course objectives.
 
--   **Final Project:** You will develop your own interactive data visualization application as your final project during Week 6/Module
-
-6.  
+-   **Final Project:** You will develop your own interactive data visualization application as your final project during Week 6.  
 
 -   **Quizzes:** In this course, you will have opportunities to assess your own knowledge. You are expected to complete two weekly quizzes that provide immediate feedback and support ongoing learning.
 

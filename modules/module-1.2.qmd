@@ -40,7 +40,7 @@ The end goal is to have a nice dataset with a combination of World Bank and [V-D
 
 {{< video https://youtu.be/Z_jEYnRBv4M title='Downloading Data from the World Bank' >}}
 
-You will no doubt remember the messy data that we downloaded from the World Bank's website in [module 1.1](/modules/module-1.1.htmll#step-1-download-data-from-the-world-bank). Usually it is much easier to download data from an API as opposed to wrangling it from a .csv file. In this example, I want to illustrate that for you by having you download the same data that we worked with in the last module using the [wbstats](https://cran.r-project.org/web/packages/wbstats/vignettes/wbstats.html) package.
+You will no doubt remember the messy data that we downloaded from the World Bank's website in [module 1.1](/modules/module-1.1.html). Usually it is much easier to download data from an API as opposed to wrangling it from a .csv file. In this example, I want to illustrate that for you by having you download the same data that we worked with in the last module using the [wbstats](https://cran.r-project.org/web/packages/wbstats/vignettes/wbstats.html) package.
 
 First we are going to load `wbstats` along with `dplyr` and `janitor`. The `wb_data()` function is the one we need to download the data from the World Bank's API. `wb_data()` requires to main sets of arguments: a list of indicators that we want to use and the period for which we want to download data. The period can can be entered as two separate arguments (e.g. `start_date` and `end_date`). But for this exercise we will specify the number of years we want to download using `mrv` which stands for "most recent value." 
 
@@ -104,7 +104,7 @@ The next thing we want to talk about is how to filter observations and to select
 While V-Dem has wealth of indicators related to democracy, we are going to focus on the most famous one called the "polyarchy" score. We are also going to download data on per capita GDP and create some indicator variables for region that we will use later on when we summarize the data. Along with those variables, we also want to retain `country_name`, `year` and `country_id` for the purposes of merging these data with our World Bank data. 
 
 ::: {.callout-note}
-While V-Dem has a variable look-up tool (`find_var`), it does not provide very much information on the variables that the search function returns. Therefore, if you want to use this package for your own research, I highly recommend just going to the [V-Dem codebook](https://www.v-dem.net/documents/24/codebook_v13.pdf) and manually grabbing the codes for the indicators that you want to use in your analysis. 
+While V-Dem has a variable look-up tool (`find_var`), it does not provide very much information on the variables that the search function returns. Therefore, if you want to use this package for your own research, I highly recommend just going to the [V-Dem codebook](https://www.v-dem.net/data/reference-documents/) and manually grabbing the codes for the indicators that you want to use in your analysis. 
 :::
 
 In addition to filtering out years and selecting variables, let's also create a `region` coding to facilitate our analysis later on. We will do this by piping in a `mutate()` call where we use the [case_match()](https://dplyr.tidyverse.org/reference/case_match.html) function to change the `region` from a numeric variable to a string. This will come in handy when we go to visualize the data in future lessons.  

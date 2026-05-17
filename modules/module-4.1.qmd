@@ -15,7 +15,7 @@ execute:
 #| label: real_setup
 #| include: false
 library(tidycensus)
-my_api_key = Sys.getenv("census_api_key")
+my_api_key = Sys.getenv("CENSUS_API_KEY")
 census_api_key(my_api_key)
 ```
 
