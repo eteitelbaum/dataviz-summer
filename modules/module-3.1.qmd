@@ -223,6 +223,7 @@ Now let's call our `create_map()` function that we just made using female labor 
 ```{r}
 #| label: use_function
 #| crop: true
+#| out-width: "100%"
 create_map(var_id = "SL.TLF.CACT.FE.ZS", 
            title= "Female Labor Force Participation", 
            legend_title = "FLFP %", 
@@ -241,7 +242,8 @@ Now let's take that info. and use it to make a plot of GDP per capita.
 
 ```{r}
 #| label: deploy_function
-#| crop: true 
+#| crop: true
+#| out-width: "100%" 
 
 create_map(var_id = "NY.GDP.PCAP.PP.KD", 
            title= "GDP per capita (constant 2017 internatioal $)", 
