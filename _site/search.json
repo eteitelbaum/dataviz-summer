@@ -1503,7 +1503,7 @@
     "href": "course-syllabus.html",
     "title": "Course Syllabus",
     "section": "",
-    "text": "Instructor: Prof. Emmanuel Teitelbaum\nEmail: ejt@gwu.edu\nThe best way to contact me is via email.\nVirtual Office/Student Hours: By appointment only. Please email me directly.\nCredit Hours: 3.0.",
+    "text": "Instructor: Prof. Emmanuel Teitelbaum\nEmail: ejt@gwu.edu\nOffice hours: MW, 3:00-5:00 p.m.\nCredit Hours: 3.0.\nTo speak with me during office hours, please schedule an appointment via Calendly.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -1514,7 +1514,7 @@
     "href": "course-syllabus.html#course-information",
     "title": "Course Syllabus",
     "section": "",
-    "text": "Instructor: Prof. Emmanuel Teitelbaum\nEmail: ejt@gwu.edu\nThe best way to contact me is via email.\nVirtual Office/Student Hours: By appointment only. Please email me directly.\nCredit Hours: 3.0.",
+    "text": "Instructor: Prof. Emmanuel Teitelbaum\nEmail: ejt@gwu.edu\nOffice hours: MW, 3:00-5:00 p.m.\nCredit Hours: 3.0.\nTo speak with me during office hours, please schedule an appointment via Calendly.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -1602,7 +1602,7 @@
     "href": "course-syllabus.html#how-you-will-learn-and-demonstrate-knowledge",
     "title": "Course Syllabus",
     "section": "How You Will Learn and Demonstrate Knowledge",
-    "text": "How You Will Learn and Demonstrate Knowledge\nMy aim is to provide you opportunities for active learning and skills development that help you meet course learning objectives and also grow in your knowledge of this field.\n\nInstruction\nI’ve designed the following instructional components to support your learning and growth in the course.\n\nLecture Videos: Each week you will be responsible for watching or listening to video mini-lectures and/or podcasts. These media support provide you essential information in order to complete course activities and assessments. Please note that recorded lectures and podcasts are not a substitute for required readings.\nTutorial Videos: Each week you have the opportunity to explore a topic further by watching additional videos. These draw on the expertise of various organizations or individuals and can be used to help you complete activities and assessments.\nReadings: Each week you will be responsible for various reading assignments. The readings contain essential content for completing the course assignments.\n\n\n\nAssessment\nThe following assessments help you gauge and demonstrate your progress in the course and support you in meeting course learning objectives.\n\nDiscord: We will discuss course topics further through the Discord. You are expected to post original thoughts/reflections and respond substantively to others.[1] \nAssignments: You will develop various skills through regular assignments. You are expected to one coding assignment per week. Thoughtfully completing weekly assignments helps you meet course objectives.\nFinal Project: You will develop your own interactive data visualization application as your final project during Week 6.\nQuizzes: In this course, you will have opportunities to assess your own knowledge. You are expected to complete two weekly quizzes that provide immediate feedback and support ongoing learning.\n\nYou’ll find support for Blackboard and other tools used for course activities and assignments under the Technology Support link in the left navigation menu in our course on Blackboard.",
+    "text": "How You Will Learn and Demonstrate Knowledge\nMy aim is to provide you opportunities for active learning and skills development that help you meet course learning objectives and also grow in your knowledge of this field.\n\nInstruction\nI’ve designed the following instructional components to support your learning and growth in the course.\n\nLecture Videos: Each week you will be responsible for watching or listening to video mini-lectures and/or podcasts. These media support provide you essential information in order to complete course activities and assessments. Please note that recorded lectures and podcasts are not a substitute for required readings.\nTutorial Videos: Each week you have the opportunity to explore a topic further by watching additional videos. These draw on the expertise of various organizations or individuals and can be used to help you complete activities and assessments.\nReadings: Each week you will be responsible for various reading assignments. The readings contain essential content for completing the course assignments.\n\n\n\nAssessment\nThe following assessments help you gauge and demonstrate your progress in the course and support you in meeting course learning objectives.\n\nDiscord: We will discuss course topics further through the Discord. Feel free to post your questions about technical issues or to respond helpfully to questions from other students.\nAssignments: You will develop various skills through regular assignments. You are expected to one coding assignment per week. Thoughtfully completing weekly assignments helps you meet course objectives.\nFinal Project: You will develop your own interactive data visualization application as your final project during Week 6.\nQuizzes: In this course, you will have opportunities to assess your own knowledge. You are expected to complete two weekly quizzes that provide immediate feedback and support ongoing learning.\n\nYou’ll find support for Blackboard and other tools used for course activities and assignments under the Technology Support link in the left navigation menu in our course on Blackboard.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -1668,7 +1668,7 @@
     "href": "course-syllabus.html#course-communication",
     "title": "Course Syllabus",
     "section": "Course Communication",
-    "text": "Course Communication\nCommunication in our course is essential; clearing up questions earlier than later is a good practice, so please don’t hesitate to reach out to me. In any mode of communication used in our course, all of us will follow netiquette found in our syllabus.\nWe will communicate primarily through GW’s Blackboard System and the Discord server. Announcements and emails sent through Blackboard automatically go to your GW email address (i.e., userid@gwu.edu). Please check your GW email account on a daily basis or forward your GW email to another address that you check daily.\nI will respond to emails/discussion posts within 48 hours (i.e., “24 hours on weekdays and on the next business day over weekends and holidays.”) I will provide feedback on assignments/exams within 3 days (i.e., “five days on weekdays and on the next business day over weekends and holidays.”)\nYou can post general course-related questions to our Discord server. Please post your question here first rather than emailing me directly if your question regards the course material. However, if you have a question that is more personal in nature (i.e., grades), please email me directly to set up an appointment.",
+    "text": "Course Communication\nCommunication in our course is essential; clearing up questions earlier than later is a good practice, so please don’t hesitate to reach out to me. In any mode of communication used in our course, all of us will follow the rules of netiquette discussed below.\n\nBlackboard and email\nWe will communicate primarily through GW’s Blackboard System and the Discord server. Announcements and emails sent through Blackboard automatically go to your GW email address (i.e., userid@gwu.edu). Please check your GW email account on a daily basis or forward your GW email to another address that you check daily.\nI will respond to emails within 48 hours on weekdays and by the next business day over weekends and holidays. I will provide feedback on assignments within five business days.\n\n\nTechnical issues\nFor technical coding questions, please reach out in person during office hours or post on Discord rather than emailing me. Note that email is not an effective medium for diagnosing and solving coding problems. Debugging is also one of the most legitimate uses of AI tools in this course. If your code throws an error and you cannot determine why, consulting an AI is a reasonable first step before reaching out. You can post general course-related questions to our Discord server; please post there first rather than emailing me directly. However, if you have a question that is more personal in nature (e.g., grades), please email me directly to set up an appointment.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -2101,6 +2101,17 @@
     "crumbs": [
       "Course Modules",
       "Module 5.1"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#policy-on-ai-tools",
+    "href": "course-syllabus.html#policy-on-ai-tools",
+    "title": "Course Syllabus",
+    "section": "Policy on AI Tools",
+    "text": "Policy on AI Tools\n\nOverview\nYou may use AI tools—such as ChatGPT, Claude, Gemini, and Copilot—to support your learning in this course. These tools can help you explain a concept, clarify an error message, walk through how a function works, or help you debug code that isn’t running correctly.\nThat said, there is an important distinction between using AI as a learning support versus using it to replace learning entirely. The goal of this course is for you to develop genuine skills in data visualization and R programming. Submitting AI-generated work as your own defeats that purpose.\n\n\nGuidelines\nFollow these principles when using AI tools:\n\nTry first: Before turning to an AI tool, consult the course materials, lecture videos, and readings. For labs, work through the guided hints before seeking AI assistance. For homework, it is appropriate to consult AI if you are genuinely stuck.\nUse AI as a consultant, not a ghostwriter: Asking an AI tool to explain how a function works, debug code that isn’t running, or decipher an error message is a legitimate use. Asking it to complete your assignments for you is not.\nThink critically: AI tools make mistakes. They hallucinate functions, write syntactically incorrect code, and sometimes give confidently wrong answers. You are responsible for understanding and verifying any code you submit.\nAcknowledge your use: If you use an AI tool in completing an assignment, note this in your submission and confirm that the tool was used in an advisory capacity rather than to generate your final product.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
     ]
   }
 ]
