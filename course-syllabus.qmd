@@ -6,12 +6,10 @@ title: "Course Syllabus"
 
 | Instructor: Prof. Emmanuel Teitelbaum
 | Email: [ejt\@gwu.edu](mailto:ejt@gwu.edu)
+| Office hours: MW, 3:00-5:00 p.m. 
+| Credit Hours: 3.0.
 
-The best way to contact me is via email.
-
-Virtual Office/Student Hours: By appointment only. Please email me directly.
-
-Credit Hours: 3.0.
+To speak with me during office hours, please schedule an appointment via [Calendly](https://calendly.com/emmanuel-teitelbaum/15min).
 
 ## What Our Course Is About
 
@@ -31,23 +29,27 @@ Course and module objectives are guides to gauge your skill and knowledge develo
 
 ## Aiming For Success
 
-I care about your learning and also about this subject matter, and I am here to help you have a meaningful learning experience. I expect you to take ownership of your learning: you can get more out of the course by thoughtfully participating in discussions, actively taking notes on readings and lectures, and giving your best effort overall. I will hold you to the highest standards for academic honesty and integrity in your work. I will also encourage you to collaborate and learn from your peers through thoughtful and respectful discussion. It is recommended you log in daily order to keep up with course requirements. I must highlight that communication is vital, so I hope you feel comfortable reaching out to me if you are struggling or have concerns or need [accommodations beyond accessibility](#_heading=h.41mghml). We can determine strategies to set you up for success. Finally, I look forward to collaborating with you in this course to create a meaningful experience for everyone.
+I care about your learning and also about this subject matter, and I am here to help you have a meaningful learning experience. I expect you to take ownership of your learning: you can get more out of the course by thoughtfully participating in discussions, actively taking notes on readings and lectures, and giving your best effort overall. I will hold you to the highest standards for academic honesty and integrity in your work. I will also encourage you to collaborate and learn from your peers through thoughtful and respectful discussion. It is recommended you log in daily order to keep up with course requirements. I must highlight that communication is vital, so I hope you feel comfortable reaching out to me if you are struggling or have concerns or need accommodations beyond accessibility. We can determine strategies to set you up for success. Finally, I look forward to collaborating with you in this course to create a meaningful experience for everyone.
 
-# Policy on AI Tools
+## Policy on AI Tools
 
-**Overview:**
+### Overview
 
-The use of ChatGPT can be a valuable tool for students in this course, but it is important to use it ethically and appropriately. By following the guidelines and expectations outlined in this syllabus policy, students can maximize the benefits of using ChatGPT while also demonstrating their own critical thinking, research, and programming skills.
+You may use AI tools—such as ChatGPT, Claude, Gemini, and Copilot—to support your learning in this course. These tools can help you explain a concept, clarify an error message, walk through how a function works, or help you debug code that isn't running correctly.
 
-As part of this course, students will have the option to use ChatGPT, a large language model trained by OpenAI, to assist in the writing of their R scripts for specific course assignments. ChatGPT can provide students with a starting point for their code but often the code is incomplete or error-prone. It is important to recognize that ChatGPT is a tool and not a substitute for critical thinking, research, or programming skills. Therefore, this syllabus policy outlines the guidelines and expectations for using ChatGPT in this course.
+That said, there is an important distinction between using AI as a learning support versus using it to replace learning entirely. The goal of this course is for you to develop genuine skills in data visualization and R programming. Submitting AI-generated work as your own defeats that purpose.
 
-**Guidelines:**
+### Guidelines
 
-Use ChatGPT ethically and honestly. Do not use ChatGPT to plagiarize or take credit for work that is not your own. Any use of ChatGPT must be properly cited and referenced in accordance with the university's code of academic integrity.
+Follow these principles when using AI tools:
 
-Recognize the limitations of ChatGPT. ChatGPT is a machine learning model and may not always provide the most accurate or relevant information. Therefore, it is important to critically evaluate the information and verify it with other sources.
+-   **Try first**: Before turning to an AI tool, consult the course materials, lecture videos, and readings. For labs, work through the guided hints before seeking AI assistance. For homework, it is appropriate to consult AI if you are genuinely stuck.
 
-Use ChatGPT appropriately. ChatGPT should only be used to assist in writing boilerplate syntax for this course. It's a starting point. It should not be used to attempt to complete other assignments or assessments in this course or in other courses.
+-   **Use AI as a consultant, not a ghostwriter**: Asking an AI tool to explain how a function works, debug code that isn't running, or decipher an error message is a legitimate use. Asking it to complete your assignments for you is not.
+
+-   **Think critically**: AI tools make mistakes. They hallucinate functions, write syntactically incorrect code, and sometimes give confidently wrong answers. You are responsible for understanding and verifying any code you submit.
+
+-   **Acknowledge your use**: If you use an AI tool in completing an assignment, note this in your submission and confirm that the tool was used in an advisory capacity rather than to generate your final product.
 
 ## Office Hours
 
@@ -129,7 +131,7 @@ I've designed the following instructional components to support your learning an
 
 The following assessments help you gauge and demonstrate your progress in the course and support you in meeting course learning objectives.
 
--   **Discord:** We will discuss course topics further through the Discord. You are expected to post original thoughts/reflections and respond substantively to others.[\[1\]](#_msocom_1) 
+-   **Discord:** We will discuss course topics further through the Discord. Feel free to post your questions about technical issues or to respond helpfully to questions from other students. 
 
 -   **Assignments**: You will develop various skills through regular assignments. You are expected to one coding assignment per week. Thoughtfully completing weekly assignments helps you meet course objectives.
 
@@ -215,13 +217,17 @@ For further information, please consult with your advisor and complete a [CCAS g
 
 ## Course Communication
 
-Communication in our course is essential; clearing up questions earlier than later is a good practice, so please don't hesitate to reach out to me. In any mode of communication used in our course, all of us will follow [netiquette](#_heading=h.49x2ik5) found in our syllabus.
+Communication in our course is essential; clearing up questions earlier than later is a good practice, so please don't hesitate to reach out to me. In any mode of communication used in our course, all of us will follow the rules of netiquette discussed below.
+
+### Blackboard and email
 
 We will communicate primarily through [GW's Blackboard System](https://blackboard.gwu.edu) and the Discord server. Announcements and emails sent through Blackboard automatically go to your GW email address (i.e., userid\@gwu.edu). Please check your GW email account on a daily basis or forward your GW email to another address that you check daily.
 
-I will respond to emails/discussion posts within 48 hours (i.e., "24 hours on weekdays and on the next business day over weekends and holidays.") I will provide feedback on assignments/exams within 3 days (i.e., "five days on weekdays and on the next business day over weekends and holidays.")
+I will respond to emails within 48 hours on weekdays and by the next business day over weekends and holidays. I will provide feedback on assignments within five business days.
 
-You can post general course-related questions to our Discord server. Please post your question here first rather than emailing me directly if your question regards the course material. However, if you have a question that is more personal in nature (i.e., grades), please email me directly to set up an appointment.
+### Technical issues
+
+For technical coding questions, please reach out in person during office hours or post on Discord rather than emailing me. Note that email is not an effective medium for diagnosing and solving coding problems. Debugging is also one of the most legitimate uses of AI tools in this course. If your code throws an error and you cannot determine why, consulting an AI is a reasonable first step before reaching out. You can post general course-related questions to our Discord server; please post there first rather than emailing me directly. However, if you have a question that is more personal in nature (e.g., grades), please email me directly to set up an appointment.
 
 ## Netiquette
 
