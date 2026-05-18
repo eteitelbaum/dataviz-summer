@@ -72,7 +72,8 @@ Now, let's make our first choropleth map with the data. Let's map World Bank inc
 
 ```{r}
 #| label: first_map
-#| crop: true 
+#| crop: true
+#| column: page
 
 library(ggplot2)
 
@@ -89,6 +90,7 @@ The default ggplot settings are pretty good for a preview, but we could make it 
 ```{r}
 #| label: beautify_map
 #| crop: true
+#| column: page
 
 library(ggthemes)
 
@@ -131,7 +133,8 @@ Now we can map these data. Everything here is pretty much the same as before, ex
 
 ```{r}
 #| label: oil_rents
-#| crop: true 
+#| crop: true
+#| column: page
 
 ggplot(data = rents_map_df) +
   geom_sf(aes(fill = oil_rents_gdp)) + # shade based on oil rents

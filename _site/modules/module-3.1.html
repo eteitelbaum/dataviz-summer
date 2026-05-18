@@ -597,7 +597,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/eteitelbaum/dataviz-summer/edit/main/modules/module-3.1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/eteitelbaum/dataviz-summer/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/getting-started.html">Course Modules</a></li><li class="breadcrumb-item"><a href="../modules/module-3.1.html">Module 3.1</a></li></ol></nav><div class="quarto-title">
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/getting-started.html">Course Modules</a></li><li class="breadcrumb-item"><a href="../modules/module-3.1.html">Module 3.1</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Module 3.1</h1>
 <p class="subtitle lead">Choropleth Maps</p>
 </div>
@@ -645,7 +645,7 @@ Prework
 <p>One important concept in mapping that we are going to come across this week: <a href="https://r.geocompx.org/spatial-class.html#intro-sf">simple features</a>. Simple features is a formal international standard for representing objects in the real world in digital space.</p>
 <p>A “feature” is basically any object in the real world that can be represented in two or three-dimensional space. A tree or a house can be a feature as can a forest or a body of water. But in politics we are usually focused on mapping the political boundaries of different administrative units like countries, states or provinces, counties and cities.</p>
 <p>Simple features allow us to work with such boundaries easily in a data frame in R. We can take all of the points associated with a geometry and store it in a special data frame column (usually labeled ‘geom’ or ‘geometry’). This ability to store all of the geographic information in one column differs from how spatial data are organized under the traditional <a href="https://cran.r-project.org/web/packages/sp/vignettes/intro_sp.pdf">spatial objects</a> standard and makes it much easier to work with geographic data in R.</p>
-</section><section id="using-rnaturalearth" class="level2"><h2 class="anchored" data-anchor-id="using-rnaturalearth">Using rnaturalearth</h2>
+</section><section id="using-rnaturalearth" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="using-rnaturalearth">Using rnaturalearth</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HB3PMF93hzs" title="Using rnaturalearth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>In this module we are going to be with the <a href="https://cran.r-project.org/web/packages/rnaturalearth/rnaturalearth.pdf">rnaturalearth</a> package, which facilitates working with <a href="https://www.naturalearthdata.com/">Natural Earth</a> map data in R. Natural Earth is a public domain map dataset based on Tom Patterson’s Natural Earth <a href="https://en.wikipedia.org/wiki/Natural_Earth_projection">projection</a> that provides data suitable for making small-scale world, regional and country maps. Natural Earth contains country boundaries, first-order admin boundaries like provinces and states, urban polygons and <a href="https://www.naturalearthdata.com/features/">more</a>. <code>rnaturalearth</code> supports both simple features (<code>sf</code>) and spatial objects (<code>sp</code>) formats, but we are going to be focused on using simple features for the reasons stated earlier.</p>
 <section id="grabbing-country-shapes-with-ne_countries" class="level3"><h3 class="anchored" data-anchor-id="grabbing-country-shapes-with-ne_countries">Grabbing country shapes with ne_countries()</h3>
@@ -683,24 +683,24 @@ First 10 features:
 10 MULTIPOLYGON (((162.9832 5....</code></pre>
 </div>
 </div>
-</section><section id="make-a-map-with-geom_sf" class="level3"><h3 class="anchored" data-anchor-id="make-a-map-with-geom_sf">Make a map with geom_sf()</h3>
+</section><section id="make-a-map-with-geom_sf" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="make-a-map-with-geom_sf">Make a map with geom_sf()</h3>
 <p>Now, let’s make our first choropleth map with the data. Let’s map World Bank income groups. Here we will use the special features <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf()</a></code> from <code>ggplot2</code> and for our aesthetics mapping we will specify <code>fill = income_grp</code>.</p>
-<div class="cell" data-crop="true">
+<div class="cell page-columns page-full" data-crop="true">
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">world_map_df</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">income_grp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"World Bank country income categories"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="module-3.1_files/figure-html/first_map-1.png" class="img-fluid figure-img" width="672"></p>
+<div class="cell-output-display page-columns page-full">
+<div class="page-columns page-full">
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="module-3.1_files/figure-html/first_map-1.png" class="img-fluid figure-img column-page" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section><section id="beautify-your-map" class="level3"><h3 class="anchored" data-anchor-id="beautify-your-map">Beautify your map</h3>
+</section><section id="beautify-your-map" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="beautify-your-map">Beautify your map</h3>
 <p>The default ggplot settings are pretty good for a preview, but we could make it look a lot better. Let’s add some labels, a <code>ggtheme</code> map theme and the default <code>viridis</code> color mapping.</p>
-<div class="cell" data-crop="true">
+<div class="cell page-columns page-full" data-crop="true">
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">world_map_df</span><span class="op">)</span> <span class="op">+</span></span>
@@ -711,14 +711,14 @@ First 10 features:
 <span>    <span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_d</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="module-3.1_files/figure-html/beautify_map-1.png" class="img-fluid figure-img" width="672"></p>
+<div class="cell-output-display page-columns page-full">
+<div class="page-columns page-full">
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="module-3.1_files/figure-html/beautify_map-1.png" class="img-fluid figure-img column-page" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section></section><section id="using-rnaturalearth-to-map-other-data" class="level2"><h2 class="anchored" data-anchor-id="using-rnaturalearth-to-map-other-data">Using rnaturalearth to map other data</h2>
+</section></section><section id="using-rnaturalearth-to-map-other-data" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="using-rnaturalearth-to-map-other-data">Using rnaturalearth to map other data</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/5RnnGov3Iw4" title="Using rnaturalearth to map data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Now that we know how to make a map with Natural Earth shapes and <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf()</a></code>, we can merge in data and map data from other sources. Let’s go ahead and merge some data on oil rents from the World Bank. We will do a <code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join()</a></code> based on iso3c country codes. In the World Bank data the iso3c codes are simply called “iso3c.” In <code>rnaturalearth</code> there are a number of options, but the best here for our purposes is “iso_a3”</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -756,7 +756,7 @@ $ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((31.28789 -2..., MULTIP
 </div>
 </div>
 <p>Now we can map these data. Everything here is pretty much the same as before, except we change the fill to <code>oil_rents_gdp</code>. We will also add a subtitle and make a few other cosmetic changes like shifting the position of the legend title, bolding the plot title and changing the <code>viridis</code> color scale from discrete to continuous.</p>
-<div class="cell" data-crop="true">
+<div class="cell page-columns page-full" data-crop="true">
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">rents_map_df</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">oil_rents_gdp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="co"># shade based on oil rents</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
@@ -776,9 +776,9 @@ $ geometry      &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((31.28789 -2..., MULTIP
 <span>      option <span class="op">=</span> <span class="st">"magma"</span>, <span class="co">#  chg to magma theme</span></span>
 <span>      labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/label_percent.html">label_percent</a></span><span class="op">(</span>scale <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="co"># add % label for legend</span></span>
 <span>      <span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="module-3.1_files/figure-html/oil_rents-1.png" class="img-fluid figure-img" width="672"></p>
+<div class="cell-output-display page-columns page-full">
+<div class="page-columns page-full">
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="module-3.1_files/figure-html/oil_rents-1.png" class="img-fluid figure-img column-page" width="672"></p>
 </figure>
 </div>
 </div>

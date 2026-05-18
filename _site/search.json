@@ -1554,6 +1554,17 @@
     ]
   },
   {
+    "objectID": "course-syllabus.html#policy-on-ai-tools",
+    "href": "course-syllabus.html#policy-on-ai-tools",
+    "title": "Course Syllabus",
+    "section": "Policy on AI Tools",
+    "text": "Policy on AI Tools\n\nOverview\nYou may use AI tools—such as ChatGPT, Claude, Gemini, and Copilot—to support your learning in this course. These tools can help you explain a concept, clarify an error message, walk through how a function works, or help you debug code that isn’t running correctly.\nThat said, there is an important distinction between using AI as a learning support versus using it to replace learning entirely. The goal of this course is for you to develop genuine skills in data visualization and R programming. Submitting AI-generated work as your own defeats that purpose.\n\n\nGuidelines\nFollow these principles when using AI tools:\n\nTry first: Before turning to an AI tool, consult the course materials, lecture videos, and readings. For labs, work through the guided hints before seeking AI assistance. For homework, it is appropriate to consult AI if you are genuinely stuck.\nUse AI as a consultant, not a ghostwriter: Asking an AI tool to explain how a function works, debug code that isn’t running, or decipher an error message is a legitimate use. Asking it to complete your assignments for you is not.\nThink critically: AI tools make mistakes. They hallucinate functions, write syntactically incorrect code, and sometimes give confidently wrong answers. You are responsible for understanding and verifying any code you submit.\nAcknowledge your use: If you use an AI tool in completing an assignment, note this in your submission and confirm that the tool was used in an advisory capacity rather than to generate your final product.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
     "objectID": "course-syllabus.html#office-hours",
     "href": "course-syllabus.html#office-hours",
     "title": "Course Syllabus",
@@ -2101,17 +2112,6 @@
     "crumbs": [
       "Course Modules",
       "Module 5.1"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#policy-on-ai-tools",
-    "href": "course-syllabus.html#policy-on-ai-tools",
-    "title": "Course Syllabus",
-    "section": "Policy on AI Tools",
-    "text": "Policy on AI Tools\n\nOverview\nYou may use AI tools—such as ChatGPT, Claude, Gemini, and Copilot—to support your learning in this course. These tools can help you explain a concept, clarify an error message, walk through how a function works, or help you debug code that isn’t running correctly.\nThat said, there is an important distinction between using AI as a learning support versus using it to replace learning entirely. The goal of this course is for you to develop genuine skills in data visualization and R programming. Submitting AI-generated work as your own defeats that purpose.\n\n\nGuidelines\nFollow these principles when using AI tools:\n\nTry first: Before turning to an AI tool, consult the course materials, lecture videos, and readings. For labs, work through the guided hints before seeking AI assistance. For homework, it is appropriate to consult AI if you are genuinely stuck.\nUse AI as a consultant, not a ghostwriter: Asking an AI tool to explain how a function works, debug code that isn’t running, or decipher an error message is a legitimate use. Asking it to complete your assignments for you is not.\nThink critically: AI tools make mistakes. They hallucinate functions, write syntactically incorrect code, and sometimes give confidently wrong answers. You are responsible for understanding and verifying any code you submit.\nAcknowledge your use: If you use an AI tool in completing an assignment, note this in your submission and confirm that the tool was used in an advisory capacity rather than to generate your final product.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
     ]
   }
 ]
