@@ -662,8 +662,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-1-make-a-line-chart-showing-country-trends-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-make-a-line-chart-showing-country-trends-20-pts">Step 1: Make a line chart showing country trends (20 pts)</h2>
 <p><em>a) Use <code>vdem</code> to retrieve your chosen democracy indicator for five countries from different regions that you expect might be interesting to compare for 1970 onward and store it in an object called <code>line_chart_dta</code>. Use <code>select()</code> to keep country name, year, and your indicator, and <code>filter()</code> to select your countries and years. Use <code>glimpse()</code> or look at the data frame to make sure everything looks right.</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>line_chart_dta <span class="ot">&lt;-</span> vdem <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">country =</span> country_name,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    year,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">____ =</span> ____</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(country <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"____"</span>, <span class="st">"____"</span>, <span class="st">"____"</span>, <span class="st">"____"</span>, <span class="st">"____"</span>) <span class="sc">&amp;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>           year <span class="sc">&gt;=</span> ____)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(____)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><em>b) Now choose one of the democracy indicators and visualize it with a line chart using <code>ggplot2</code> for the countries that you chose. Be sure to specify <code>x =</code>, <code>y =</code> and <code>color =</code> in your aes() call and use <code>geom_line()</code> to create the chart. Add appropriate axis labels, a title and a caption. Now add a colorblind-friendly color map and an attractive theme.</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(____, <span class="fu">aes</span>(<span class="at">x =</span> ____, <span class="at">y =</span> ____, <span class="at">color =</span> ____)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> ____) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"____"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"____"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"____"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"____"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"____"</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span>  <span class="co"># or try scale_color_brewer()</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()             <span class="co"># or try another theme</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><em>c) Add a vertical line at an interesting point in history or a horizontal line at a notable point on the y-axis and an annotation explaining the significance of the line.</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>____ <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> ____, <span class="at">linetype =</span> <span class="st">"____"</span>, <span class="at">color =</span> <span class="st">"____"</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> ____, <span class="at">y =</span> ____, <span class="at">label =</span> <span class="st">"____"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><em>d) In a few sentences below, interpret your chart. Describe the levels and trends in democracy scores. Put your answer right below this line in markdown text (DO NOT write your comments in a code chunk!!).</em></p>
 </section>
 <section id="step-2-make-a-column-chart-comparing-country-levels-20-pts" class="level2">

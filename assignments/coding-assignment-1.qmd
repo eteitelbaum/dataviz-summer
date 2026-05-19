@@ -36,7 +36,19 @@ Please refrain from *installing* any packages in your code chunks because this w
 *Use `glimpse()` or `View()` to make sure that the data downloaded properly.*
 
 ```{r}
+#| label: vdem-data
+#| eval: false
 
+democracy <- vdem |>
+  filter(____) |>
+  select(
+    country = country_name,
+    year,
+    ____ = ____,                 # new name = old name
+    ____ = ____
+  )
+
+glimpse(____)
 ```
 
 ## Step 2: Download data from the World Bank (20 pts)
@@ -48,15 +60,35 @@ Try to make sure you download indicators with enough data to conduct your analys
 :::
 
 ```{r}
+#| label: wb-data
+#| eval: false
 
+women_emp <- wb_data(
+  indicator = c("SG.GEN.PARL.ZS", "____"),
+  mrv = ____
+)
+
+glimpse(____)
 ```
 
 ## Step 3: Merge the data (20 pts)
 
-*Now add country codes using the `countrycode` package and merge the data using `left_join()`.* 
+*Now add country codes using the `countrycode` package and merge the data using `left_join()`.*
 
 ```{r}
+#| label: merge
+#| eval: false
 
+democracy <- democracy |>
+  mutate(iso3c = countrycode(
+    sourcevar = ____,
+    origin = "____",
+    destination = "____"
+  ))
+
+dem_women <- left_join(____, ____, by = ____)
+
+glimpse(____)
 ```
 
 ## Step 4: Summarize your combined data set (20 pts)

@@ -664,6 +664,18 @@ Warning
 <p><em>Look at the V-Dem <a href="https://www.v-dem.net/data/reference-documents/">codebook</a>. Identify two measures of democracy that are not the polyarchy score that we used in Module 1.2.</em></p>
 <p><em>Try to pick variables that will relate to women’s representation and read the description of the variable to make sure that it includes data for a sufficient number of years, e.g.&nbsp;that the data will be somewhat recent. Select the most recent 20 years of data for your analysis.</em></p>
 <p><em>Use <code>glimpse()</code> or <code>View()</code> to make sure that the data downloaded properly.</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>democracy <span class="ot">&lt;-</span> vdem <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(____) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">country =</span> country_name,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    year,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">____ =</span> ____,                 <span class="co"># new name = old name</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">____ =</span> ____</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(____)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="step-2-download-data-from-the-world-bank-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-download-data-from-the-world-bank-20-pts">Step 2: Download data from the World Bank (20 pts)</h2>
@@ -681,10 +693,30 @@ Important
 <p>Try to make sure you download indicators with enough data to conduct your analysis. You won’t get great results if there are too many NAs.</p>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>women_emp <span class="ot">&lt;-</span> <span class="fu">wb_data</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">indicator =</span> <span class="fu">c</span>(<span class="st">"SG.GEN.PARL.ZS"</span>, <span class="st">"____"</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mrv =</span> ____</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(____)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="step-3-merge-the-data-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-merge-the-data-20-pts">Step 3: Merge the data (20 pts)</h2>
 <p><em>Now add country codes using the <code>countrycode</code> package and merge the data using <code>left_join()</code>.</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>democracy <span class="ot">&lt;-</span> democracy <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">iso3c =</span> <span class="fu">countrycode</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">sourcevar =</span> ____,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">origin =</span> <span class="st">"____"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">destination =</span> <span class="st">"____"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>dem_women <span class="ot">&lt;-</span> <span class="fu">left_join</span>(____, ____, <span class="at">by =</span> ____)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(____)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="step-4-summarize-your-combined-data-set-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-summarize-your-combined-data-set-20-pts">Step 4: Summarize your combined data set (20 pts)</h2>

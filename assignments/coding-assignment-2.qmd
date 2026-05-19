@@ -41,19 +41,49 @@ library(gganimate)
 *a) Use `vdem` to retrieve your chosen democracy indicator for five countries from different regions that you expect might be interesting to compare for 1970 onward and store it in an object called `line_chart_dta`. Use `select()` to keep country name, year, and your indicator, and `filter()` to select your countries and years. Use `glimpse()` or look at the data frame to make sure everything looks right.*
 
 ```{r}
+#| label: line-chart-data
+#| eval: false
 
+line_chart_dta <- vdem |>
+  select(
+    country = country_name,
+    year,
+    ____ = ____
+  ) |>
+  filter(country %in% c("____", "____", "____", "____", "____") &
+           year >= ____)
+
+glimpse(____)
 ```
 
 *b) Now choose one of the democracy indicators and visualize it with a line chart using `ggplot2` for the countries that you chose. Be sure to specify `x = `, `y = ` and `color =` in your aes() call and use `geom_line()` to create the chart. Add appropriate axis labels, a title and a caption. Now add a colorblind-friendly color map and an attractive theme.*
 
 ```{r}
+#| label: line-chart
+#| eval: false
 
+ggplot(____, aes(x = ____, y = ____, color = ____)) +
+  geom_line(linewidth = ____) +
+  labs(
+    x = "____",
+    y = "____",
+    title = "____",
+    caption = "____",
+    color = "____"
+  ) +
+  scale_color_viridis_d() +  # or try scale_color_brewer()
+  theme_minimal()             # or try another theme
 ```
 
 *c) Add a vertical line at an interesting point in history or a horizontal line at a notable point on the y-axis and an annotation explaining the significance of the line.*
 
 ```{r}
+#| label: line-chart-annotated
+#| eval: false
 
+____ +
+  geom_vline(xintercept = ____, linetype = "____", color = "____") +
+  annotate("text", x = ____, y = ____, label = "____")
 ```
 
 *d) In a few sentences below, interpret your chart. Describe the levels and trends in democracy scores. Put your answer right below this line in markdown text (DO NOT write your comments in a code chunk!!).*
