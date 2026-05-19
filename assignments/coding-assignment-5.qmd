@@ -87,7 +87,7 @@ Once you get the app running, take some time to explore the data in a few of you
 ::: {.callout-important}
 ## Submission
 
-Render your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.
+Make sure your project folder contains your completed `app.R`, the `vdem_trends.csv` data file you created in Step 1, and this worksheet with your written interpretation in Step 5. Render the worksheet to HTML, then zip the entire project folder and submit it to Blackboard.
 
-Before submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.
+Before submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions.
 :::
