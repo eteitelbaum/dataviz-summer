@@ -29,7 +29,7 @@ This page displays an outline of the topics, content, and assignments for the te
 ::: column-screen-inset-right
 | Module | Date | Skills | Packages | Functions | Readings | Videos | Assignments |
 |:--:|----|----|----|----|:--:|----|:--:|
-| [GS](/modules/getting-started.qmd "Getting Started") | `r advdate(sun,0)` | R, RStudio, GitHub |  |  |  | [📖](https://rstudio-education.github.io/hopr/starting.html "hopwr, Appendix A and B") [📖](https://quarto.org/docs/get-started/hello/rstudio.html "Hello, Quarto") [📖](https://youtu.be/ApvMnAfQe8A "Git and GitHub Classroom") |  |
+| [GS](/modules/getting-started.qmd "Getting Started") | `r advdate(sun,0)` | R, RStudio, GitHub |  |  | [📖](https://rstudio-education.github.io/hopr/starting.html "hopwr, Appendix A and B") [📖](https://quarto.org/docs/get-started/hello/rstudio.html "Hello, Quarto") | [🖥️](https://youtu.be/eimM6pNkYjE "Getting Started with R and RStudio") [🖥️](https://youtu.be/6QN9ZYURDFg "Your First Quarto Document") [🖥️](https://youtu.be/ApvMnAfQe8A "Getting Started With GitHub") |  |
 | [1.1](/modules/module-1.1.html "Module 1.1") | `r advdate(mon,0)` | Read data into R | `readr`, `dplyr` | `read_csv()`, `glimpse()` | [📖](https://r4ds.hadley.nz/data-import.html#introduction "r4ds 8.1 & 8.2") | [🖥️](https://youtu.be/ZwJsSjJRuMU "Reading data into R") |  |
 |  | `r advdate(tues,0)` | Reshape data | `tidyr` | `pivot_longer()` | [📖](https://r4ds.hadley.nz/data-tidy.html "r4ds 6.1 & 6.3") | [🖥️](https://youtu.be/u4AXi8A1Bqo "Reshaping data") |  |
 |  | `r advdate(wed,0)` | Clean data | `dplyr` | `mutate()`, `mutate_at()`, `substring()` |  | [🖥️](https://youtu.be/xa0tYCfHHTI "Cleaning data in R") | [📘](/quiz.html "Module quiz available on course LMS") |
