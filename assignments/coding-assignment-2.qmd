@@ -4,6 +4,7 @@ subtitle: "Basic Data Visualizations"
 author: "Your Name"
 date: today
 execute:
+  eval: false
   message: false
   warning: false
 ---
@@ -42,7 +43,7 @@ library(gganimate)
 
 ```{r}
 #| label: line-chart-data
-#| eval: false
+
 
 line_chart_dta <- vdem |>
   select(
@@ -60,7 +61,7 @@ glimpse(____)
 
 ```{r}
 #| label: line-chart
-#| eval: false
+
 
 ggplot(____, aes(x = ____, y = ____, color = ____)) +
   geom_line(linewidth = ____) +
@@ -79,7 +80,7 @@ ggplot(____, aes(x = ____, y = ____, color = ____)) +
 
 ```{r}
 #| label: line-chart-annotated
-#| eval: false
+
 
 ____ +
   geom_vline(xintercept = ____, linetype = "____", color = "____") +

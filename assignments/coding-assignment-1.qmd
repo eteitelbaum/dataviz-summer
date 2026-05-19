@@ -4,6 +4,7 @@ subtitle: "Wrangling Data"
 author: "Your Name"
 date: today
 execute:
+  eval: false
   message: false
   warning: false
 ---
@@ -37,7 +38,7 @@ Please refrain from *installing* any packages in your code chunks because this w
 
 ```{r}
 #| label: vdem-data
-#| eval: false
+
 
 democracy <- vdem |>
   filter(____) |>
@@ -61,7 +62,7 @@ Try to make sure you download indicators with enough data to conduct your analys
 
 ```{r}
 #| label: wb-data
-#| eval: false
+
 
 women_emp <- wb_data(
   indicator = c("SG.GEN.PARL.ZS", "____"),
@@ -77,7 +78,7 @@ glimpse(____)
 
 ```{r}
 #| label: merge
-#| eval: false
+
 
 democracy <- democracy |>
   mutate(iso3c = countrycode(
