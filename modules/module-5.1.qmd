@@ -169,7 +169,11 @@ The server function contains three arguments. Two of them (`input` and `output`)
 Next we are going to define the output of the app with `output$scatterplot <- renderPlot({})`. This bit of code is going to render a plot and then save it to the output in an object called `scatterplot`. Remember that in the UI, we defined our plot output as `plotOutput("scatterplot")`. This is where that object `scatterplot` is going to come from. 
 The scatter plot is going to be created in two steps. First we are going to reactively retrieve the data each time the user selects new inputs. To do this we are going to use the inputs (`xcol`, `ycol`) from the UI to subset our data frame `demdata`, e.g. `dem_data[, c(input$xcol, input$ycol, "region")]`. That is going to create a three-column data frame with the user's selected x variable, y variable and the region coding and store it in an object called `selectedData`.  
 
-From there, we take `selectedData` and use it to create a scatter plot with `ggplot2`. This is done in the usual way, except for a couple of things. First, in our `aes()` call we need to use `get()` to specify the x and y variables. `aes()` uses nonstandard evaluation to capture variable names, meaning that the bare column names of the data frame are read directly so that you do not have to explicitly quote the inputs. However, in this case the names of the inputs are being passed as a string from the user. The `get()` function enables us to retrieve the value of an object based on its name. So our `aes()` call will be `aes(x = get(x = input$xcol), y = get(input$ycol)).` 
+From there, we take `selectedData` and use it to create a scatter plot with `ggplot2`. This is done in the usual way, except for a couple of things. First, in our `aes()` call we need to use `.data[[]]` to specify the x and y variables. `aes()` uses nonstandard evaluation to capture variable names, meaning that the bare column names of the data frame are read directly so that you do not have to explicitly quote the inputs. However, in this case the names of the inputs are being passed as a string from the user. The `.data[[]]` pronoun from `rlang` is the modern, recommended way to handle this — it accesses a column by name from the data frame passed to `ggplot()`. So our `aes()` call will be `aes(x = .data[[input$xcol]], y = .data[[input$ycol]])`.
+
+::: {.callout-note}
+The video for this module uses the older `get()` approach (e.g. `aes(x = get(input$xcol), y = get(input$ycol))`), which also works. The `.data[[]]` pronoun is now the preferred approach as it is more explicit and integrates better with tidyverse tools.
+:::
 
 The other thing we need to do is to add some special code to deal with the x- and y-axis labels because these are going to change every time the user selects a different variable. Here we are going to use the `names()` function to return the names of the the object selected in the `vars` vector of variable names. To make sure we get the right name from the vector, we are going to use the `which()` function. `which()` returns the value that satisfies a given function, in this case the index number of the `vars` vector that matches the user input. So for example, our x label will be defined as `x = names(vars[which(vars == input$xcol)]`. Here the number returned by `[which(vars == input$xcol)]` is going to be used to subset the `vars` list so that x displays the name of the variable selected by the user.
 
@@ -184,7 +188,7 @@ server <- function(input, output, session) {
   output$scatterplot <- renderPlot({
     
     # ggplot call
-    ggplot(dem_data, aes(x = get(input$xcol), y = get(input$ycol))) +
+    ggplot(dem_data, aes(x = .data[[input$xcol]], y = .data[[input$ycol]])) +
       geom_point(aes(color = region)) +
       geom_smooth(method = "loess") +
       scale_color_viridis_d(option = "plasma") +

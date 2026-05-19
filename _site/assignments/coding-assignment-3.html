@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 3 – PSC/DATS 2102–Summer Schedule</title>
+<title>Coding Assignment 3 – PSC/DATS 2102–Summer Schedule</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -75,11 +110,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Assignment 3 – PSC/DATS 2102–Summer Schedule">
-<meta property="og:description" content="Homepage for PSC/DATS 2102, George Washington University.">
+<meta property="og:title" content="Coding Assignment 3 – PSC/DATS 2102–Summer Schedule">
+<meta property="og:description" content="Making Maps">
 <meta property="og:site_name" content="PSC/DATS 2102--Summer Schedule">
-<meta name="twitter:title" content="Assignment 3 – PSC/DATS 2102–Summer Schedule">
-<meta name="twitter:description" content="Homepage for PSC/DATS 2102, George Washington University.">
+<meta name="twitter:title" content="Coding Assignment 3 – PSC/DATS 2102–Summer Schedule">
+<meta name="twitter:description" content="Making Maps">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -557,7 +592,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-1-create-a-data-frame-with-country-shapes-25-pts" id="toc-step-1-create-a-data-frame-with-country-shapes-25-pts" class="nav-link" data-scroll-target="#step-1-create-a-data-frame-with-country-shapes-25-pts">Step 1: Create a data frame with country shapes (25 pts)</a></li>
   <li><a href="#step-2-visualize-democracy-25-pts" id="toc-step-2-visualize-democracy-25-pts" class="nav-link" data-scroll-target="#step-2-visualize-democracy-25-pts">Step 2: Visualize democracy (25 pts)</a></li>
   <li><a href="#step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts" id="toc-step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts" class="nav-link" data-scroll-target="#step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts">Step 3: Use a map app to explore the relevance of other indicators (25 pts)</a></li>
-  <li><a href="#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts" id="toc-step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts" class="nav-link" data-scroll-target="#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts">Step 4: Make a leaflet map of conflict to explore the relvance of oil (25 pts)</a></li>
+  <li><a href="#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts" id="toc-step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts" class="nav-link" data-scroll-target="#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts">Step 4: Make a leaflet map of conflict to explore the relevance of oil (25 pts)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/eteitelbaum/dataviz-summer/edit/main/assignments/coding-assignment-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/eteitelbaum/dataviz-summer/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -567,7 +602,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/coding-assignment-1.html">Coding Assignments</a></li><li class="breadcrumb-item"><a href="../assignments/coding-assignment-3.html">Coding Assignment 3</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Assignment 3</h1>
+<h1 class="title">Coding Assignment 3</h1>
+<p class="subtitle lead">Making Maps</p>
 </div>
 
 
@@ -587,17 +623,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>For this assignment, we are going to be evaluating Michael Ross’s influential book <a href="https://www-jstor-org.proxygw.wrlc.org/stable/j.ctt7s3wz.10">The Oil Curse</a>. According to Michael Ross, oil undermines democracy in a number of ways. We will map some data in order to evaluate different aspects of his argument.</p>
-<p><strong>Submission note</strong>: Accept the invitation on Blackboard to submit this assignment via GitHub.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load packages: tidyverse, vdemdata, countrycode, rnaturalearth,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># rnaturalearthdata, sf, ggthemes, wbstats, leaflet</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="step-1-create-a-data-frame-with-country-shapes-25-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-create-a-data-frame-with-country-shapes-25-pts">Step 1: Create a data frame with country shapes (25 pts)</h2>
-<p><em>Use <code>rnaturalearth</code> to extract and store country shapes as simple features in a data frame. Filter out Antarctica and glimpse() the data to make sure everything looks right.</em></p>
+<p><em>Use <code>rnaturalearth</code> to extract and store country shapes as simple features in a data frame. Filter out Antarctica and <code>glimpse()</code> the data to make sure everything looks right.</em></p>
 </section>
 <section id="step-2-visualize-democracy-25-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-visualize-democracy-25-pts">Step 2: Visualize democracy (25 pts)</h2>
-<p><em>a. Download one of the democracy (e.g.&nbsp;electoral democracy, liberal democracy, participatory democracy, deliberative democracy or egalitarian democracy) from V-Dem using the <code>vdemdata</code> package. Then use the vdemdata package to download this indicator and add iso3c codes to it with the <code>countrycode</code> package. See module 1.2 to refresh your memory on how to do this. (Note: you don’t have to add region names for this exercise.) <code>glimpse()</code> the data to make sure everything is there.</em></p>
-<p><em>b. Using iso_a3_eh codes from <code>rnaturalearth</code> and the iso3c codes you just added to the V-Dem data, join the V-Dem data to the country shapes. <code>glimpse()</code> the data to make sure everything look right.</em></p>
-<p><em>c.&nbsp;Use <code>ggplot()</code> and <code>geom_sf()</code> to map the data. Use <code>theme_map()</code> from <code>ggthemes</code> and give it a <code>viridis</code> color scheme. Give the map appropriate labels.</em></p>
+<p><em>a. Download one of the democracy indicators (e.g.&nbsp;electoral democracy, liberal democracy, participatory democracy, deliberative democracy or egalitarian democracy) using the <code>vdemdata</code> package. Then add iso3c codes to it with the <code>countrycode</code> package. See module 1.2 to refresh your memory on how to do this. (Note: you don’t have to add region names for this exercise.) <code>glimpse()</code> the data to make sure everything is there.</em></p>
+<p><em>b. Using iso_a3_eh codes from <code>rnaturalearth</code> and the iso3c codes you just added to the V-Dem data, join the V-Dem data to the country shapes. <code>glimpse()</code> the data to make sure everything looks right.</em></p>
+<p><em>c.&nbsp;Use <code>ggplot()</code> and <code>geom_sf()</code> to map the data. Use <code>theme_map()</code> from <code>ggthemes</code> and give it a <code>viridis</code> or other color scheme. Give the map appropriate labels.</em></p>
 <p><em>d.&nbsp;Briefly, do you see preliminary evidence of a relationship between democracy, as displayed in this map, and the map of oil rents that we built together in module 3.1?</em></p>
 </section>
 <section id="step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts" class="level2">
@@ -605,18 +644,31 @@ ul.task-list li input[type="checkbox"] {
 <p><em>The central argument in Michael Ross’s book is that oil rents undermine democracy because oil provides a non-tax source of revenue to governments. If people don’t have to worry about taxes, then they don’t have to be concerned about what their leaders are doing. He calls this the “fiscal theory of democracy.” Let’s use the map app we built in module 3.1 for exploring World Bank data to evaluate this claim.</em></p>
 <p><em>a. In your assignment folder, create a subfolder called ‘function’ and use it to store your map function helper script like we did in module 3.1.</em></p>
 <p><em>b. Now add the <code>source()</code> code chunk that will enable you to call the map function in your Quarto document.</em></p>
-<p><em>c.&nbsp;Use your function to map income taxes as a percent of government revenue (GC.TAX.GSRV.RV.ZS). Do you see evidence of a relationship between this variable and oil rents?</em></p>
-<p><em>d.&nbsp;Use the <code>wb_search()</code> function to identify at least one other variable related to taxation that would be relevant for evaluating Ross’s theory. Use your function to map that variable. Then describe the relationship with oil wealth (if any) and how the map is relevant to Ross’s theory.</em></p>
+<p><em>c.&nbsp;Use your function to map taxes as a percent of government revenue. You can use taxes on goods and services (GC.TAX.GSRV.RV.ZS) or taxes on income, profits and capital gains (GC.TAX.YPKG.RV.ZS). Then use it to map oil rents (NY.GDP.PETR.RT.ZS). Do you see evidence of a relationship between taxes and oil rents?</em></p>
+<p><em>d.&nbsp;Use the <code>wb_search()</code> function to identify at least one other variable that would be relevant for evaluating Ross’s theory. Use your function to map that variable. Then describe the relationship with oil wealth (if any) and how the map is relevant to Ross’s theory.</em></p>
 </section>
-<section id="step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts">Step 4: Make a leaflet map of conflict to explore the relvance of oil (25 pts)</h2>
+<section id="step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts">Step 4: Make a leaflet map of conflict to explore the relevance of oil (25 pts)</h2>
 <p><em>In Chapter 5 of the Oil Curse, Michael Ross argues that oil wealth is destabilizing for developing countries due to the fact that rebels and the government fight over oil. Your task for this question is to explore the relationship between conflict and oil in a leaflet map.</em></p>
-<p><em>We will harness OpenAI’s <a href="https://openai.com/blog/chatgpt">ChatGPT</a> in our research for this question. Note that because AI has a tendency to “halucinate”, you should always use other sources like Google to verify the information that ChatGPT provides.</em></p>
-<p><em>a. Select a country case to work with. This should be a oil-rich country that has recently experienced high levels of internal conflict. Examples include Iraq, Syria, Yemen and Nigeria. Use your AI to identify a country and a period of time to analyze. Say a few words about your country case and the time period you will be looking at.</em></p>
-<p><em>b. Now, following the step laid out in module 3.2, filter a few months of conflict data from the UCDP GED dataset for your selected country and convert the coordinates simple features using the <code>st_as_sf()</code> function from the <code>sf</code> package.</em></p>
+<p><em>a. Select a country case to work with. This should be an oil-rich country that has recently experienced high levels of internal conflict. Examples include Iraq, Syria, Yemen and Nigeria. Use your AI to identify a country and a period of time to analyze. Say a few words about your country case and the time period you will be looking at.</em></p>
+<p><em>b. Now, following the steps laid out in module 3.2, filter a few months of conflict data from the UCDP GED dataset for your selected country and convert the coordinates to simple features using the <code>st_as_sf()</code> function from the <code>sf</code> package.</em></p>
 <p><em>c.&nbsp;Next, produce a leaflet map that displays markers representing conflict events. Have the markers display the name of the location where the conflict event occurred when the user hovers over them. Have the popup windows display the number of deaths and the date of the event when the user clicks on them. Use “OpenTopoMap” as your basemap.</em></p>
-<p><em>d.&nbsp;Now let’s do some research into the location of oil fields. Ask your AI to give you a list of the ten biggest oil fields and in your country and their geographic coordinates. Now ask your AI how you can export those coordinates to a .csv file. Make sure that your columns are appropriately labeled (e.g.&nbsp;snake case) and save your file as oil_fields.csv in your assignment folder. Then read the data into R using <code>readr</code> and store them in an object called <code>oil_fields</code>.</em></p>
+<p><em>d.&nbsp;Now let’s do some research into the location of oil fields. Ask your AI to give you a list of the ten biggest oil fields in your country and their geographic coordinates. Ask your AI how you can export those coordinates to a .csv file. Make sure that your columns are appropriately labeled (e.g.&nbsp;snake case) and save your file as oil_fields.csv in your assignment folder. Then read the data into R using <code>readr</code> and store them in an object called <code>oil_fields</code>.</em></p>
 <p><em>e. Now map the oil fields using <code>leaflet()</code>, giving each marker a label that displays the name of the oil field. Do you notice that conflict events occur close to oil fields in your chosen country?</em></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Submission
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Render your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.</p>
+<p>Before submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.</p>
+</div>
+</div>
 
 
 </section>

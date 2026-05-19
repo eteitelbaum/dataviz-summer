@@ -806,9 +806,9 @@
   {
     "objectID": "assignments/coding-assignment-3.html",
     "href": "assignments/coding-assignment-3.html",
-    "title": "Assignment 3",
+    "title": "Coding Assignment 3",
     "section": "",
-    "text": "For this assignment, we are going to be evaluating Michael Ross’s influential book The Oil Curse. According to Michael Ross, oil undermines democracy in a number of ways. We will map some data in order to evaluate different aspects of his argument.\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, we are going to be evaluating Michael Ross’s influential book The Oil Curse. According to Michael Ross, oil undermines democracy in a number of ways. We will map some data in order to evaluate different aspects of his argument.\n\n# load packages: tidyverse, vdemdata, countrycode, rnaturalearth,\n# rnaturalearthdata, sf, ggthemes, wbstats, leaflet",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 3"
@@ -817,9 +817,9 @@
   {
     "objectID": "assignments/coding-assignment-3.html#overview",
     "href": "assignments/coding-assignment-3.html#overview",
-    "title": "Assignment 3",
+    "title": "Coding Assignment 3",
     "section": "",
-    "text": "For this assignment, we are going to be evaluating Michael Ross’s influential book The Oil Curse. According to Michael Ross, oil undermines democracy in a number of ways. We will map some data in order to evaluate different aspects of his argument.\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, we are going to be evaluating Michael Ross’s influential book The Oil Curse. According to Michael Ross, oil undermines democracy in a number of ways. We will map some data in order to evaluate different aspects of his argument.\n\n# load packages: tidyverse, vdemdata, countrycode, rnaturalearth,\n# rnaturalearthdata, sf, ggthemes, wbstats, leaflet",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 3"
@@ -828,7 +828,7 @@
   {
     "objectID": "assignments/coding-assignment-3.html#step-1-create-a-data-frame-with-country-shapes-25-pts",
     "href": "assignments/coding-assignment-3.html#step-1-create-a-data-frame-with-country-shapes-25-pts",
-    "title": "Assignment 3",
+    "title": "Coding Assignment 3",
     "section": "Step 1: Create a data frame with country shapes (25 pts)",
     "text": "Step 1: Create a data frame with country shapes (25 pts)\nUse rnaturalearth to extract and store country shapes as simple features in a data frame. Filter out Antarctica and glimpse() the data to make sure everything looks right.",
     "crumbs": [
@@ -839,9 +839,9 @@
   {
     "objectID": "assignments/coding-assignment-3.html#step-2-visualize-democracy-25-pts",
     "href": "assignments/coding-assignment-3.html#step-2-visualize-democracy-25-pts",
-    "title": "Assignment 3",
+    "title": "Coding Assignment 3",
     "section": "Step 2: Visualize democracy (25 pts)",
-    "text": "Step 2: Visualize democracy (25 pts)\na. Download one of the democracy (e.g. electoral democracy, liberal democracy, participatory democracy, deliberative democracy or egalitarian democracy) from V-Dem using the vdemdata package. Then use the vdemdata package to download this indicator and add iso3c codes to it with the countrycode package. See module 1.2 to refresh your memory on how to do this. (Note: you don’t have to add region names for this exercise.) glimpse() the data to make sure everything is there.\nb. Using iso_a3_eh codes from rnaturalearth and the iso3c codes you just added to the V-Dem data, join the V-Dem data to the country shapes. glimpse() the data to make sure everything look right.\nc. Use ggplot() and geom_sf() to map the data. Use theme_map() from ggthemes and give it a viridis color scheme. Give the map appropriate labels.\nd. Briefly, do you see preliminary evidence of a relationship between democracy, as displayed in this map, and the map of oil rents that we built together in module 3.1?",
+    "text": "Step 2: Visualize democracy (25 pts)\na. Download one of the democracy indicators (e.g. electoral democracy, liberal democracy, participatory democracy, deliberative democracy or egalitarian democracy) using the vdemdata package. Then add iso3c codes to it with the countrycode package. See module 1.2 to refresh your memory on how to do this. (Note: you don’t have to add region names for this exercise.) glimpse() the data to make sure everything is there.\nb. Using iso_a3_eh codes from rnaturalearth and the iso3c codes you just added to the V-Dem data, join the V-Dem data to the country shapes. glimpse() the data to make sure everything looks right.\nc. Use ggplot() and geom_sf() to map the data. Use theme_map() from ggthemes and give it a viridis or other color scheme. Give the map appropriate labels.\nd. Briefly, do you see preliminary evidence of a relationship between democracy, as displayed in this map, and the map of oil rents that we built together in module 3.1?",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 3"
@@ -850,20 +850,20 @@
   {
     "objectID": "assignments/coding-assignment-3.html#step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts",
     "href": "assignments/coding-assignment-3.html#step-3-use-a-map-app-to-explore-the-relevance-of-other-indicators-25-pts",
-    "title": "Assignment 3",
+    "title": "Coding Assignment 3",
     "section": "Step 3: Use a map app to explore the relevance of other indicators (25 pts)",
-    "text": "Step 3: Use a map app to explore the relevance of other indicators (25 pts)\nThe central argument in Michael Ross’s book is that oil rents undermine democracy because oil provides a non-tax source of revenue to governments. If people don’t have to worry about taxes, then they don’t have to be concerned about what their leaders are doing. He calls this the “fiscal theory of democracy.” Let’s use the map app we built in module 3.1 for exploring World Bank data to evaluate this claim.\na. In your assignment folder, create a subfolder called ‘function’ and use it to store your map function helper script like we did in module 3.1.\nb. Now add the source() code chunk that will enable you to call the map function in your Quarto document.\nc. Use your function to map income taxes as a percent of government revenue (GC.TAX.GSRV.RV.ZS). Do you see evidence of a relationship between this variable and oil rents?\nd. Use the wb_search() function to identify at least one other variable related to taxation that would be relevant for evaluating Ross’s theory. Use your function to map that variable. Then describe the relationship with oil wealth (if any) and how the map is relevant to Ross’s theory.",
+    "text": "Step 3: Use a map app to explore the relevance of other indicators (25 pts)\nThe central argument in Michael Ross’s book is that oil rents undermine democracy because oil provides a non-tax source of revenue to governments. If people don’t have to worry about taxes, then they don’t have to be concerned about what their leaders are doing. He calls this the “fiscal theory of democracy.” Let’s use the map app we built in module 3.1 for exploring World Bank data to evaluate this claim.\na. In your assignment folder, create a subfolder called ‘function’ and use it to store your map function helper script like we did in module 3.1.\nb. Now add the source() code chunk that will enable you to call the map function in your Quarto document.\nc. Use your function to map taxes as a percent of government revenue. You can use taxes on goods and services (GC.TAX.GSRV.RV.ZS) or taxes on income, profits and capital gains (GC.TAX.YPKG.RV.ZS). Then use it to map oil rents (NY.GDP.PETR.RT.ZS). Do you see evidence of a relationship between taxes and oil rents?\nd. Use the wb_search() function to identify at least one other variable that would be relevant for evaluating Ross’s theory. Use your function to map that variable. Then describe the relationship with oil wealth (if any) and how the map is relevant to Ross’s theory.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 3"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-3.html#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts",
-    "href": "assignments/coding-assignment-3.html#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relvance-of-oil-25-pts",
-    "title": "Assignment 3",
-    "section": "Step 4: Make a leaflet map of conflict to explore the relvance of oil (25 pts)",
-    "text": "Step 4: Make a leaflet map of conflict to explore the relvance of oil (25 pts)\nIn Chapter 5 of the Oil Curse, Michael Ross argues that oil wealth is destabilizing for developing countries due to the fact that rebels and the government fight over oil. Your task for this question is to explore the relationship between conflict and oil in a leaflet map.\nWe will harness OpenAI’s ChatGPT in our research for this question. Note that because AI has a tendency to “halucinate”, you should always use other sources like Google to verify the information that ChatGPT provides.\na. Select a country case to work with. This should be a oil-rich country that has recently experienced high levels of internal conflict. Examples include Iraq, Syria, Yemen and Nigeria. Use your AI to identify a country and a period of time to analyze. Say a few words about your country case and the time period you will be looking at.\nb. Now, following the step laid out in module 3.2, filter a few months of conflict data from the UCDP GED dataset for your selected country and convert the coordinates simple features using the st_as_sf() function from the sf package.\nc. Next, produce a leaflet map that displays markers representing conflict events. Have the markers display the name of the location where the conflict event occurred when the user hovers over them. Have the popup windows display the number of deaths and the date of the event when the user clicks on them. Use “OpenTopoMap” as your basemap.\nd. Now let’s do some research into the location of oil fields. Ask your AI to give you a list of the ten biggest oil fields and in your country and their geographic coordinates. Now ask your AI how you can export those coordinates to a .csv file. Make sure that your columns are appropriately labeled (e.g. snake case) and save your file as oil_fields.csv in your assignment folder. Then read the data into R using readr and store them in an object called oil_fields.\ne. Now map the oil fields using leaflet(), giving each marker a label that displays the name of the oil field. Do you notice that conflict events occur close to oil fields in your chosen country?",
+    "objectID": "assignments/coding-assignment-3.html#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts",
+    "href": "assignments/coding-assignment-3.html#step-4-make-a-leaflet-map-of-conflict-to-explore-the-relevance-of-oil-25-pts",
+    "title": "Coding Assignment 3",
+    "section": "Step 4: Make a leaflet map of conflict to explore the relevance of oil (25 pts)",
+    "text": "Step 4: Make a leaflet map of conflict to explore the relevance of oil (25 pts)\nIn Chapter 5 of the Oil Curse, Michael Ross argues that oil wealth is destabilizing for developing countries due to the fact that rebels and the government fight over oil. Your task for this question is to explore the relationship between conflict and oil in a leaflet map.\na. Select a country case to work with. This should be an oil-rich country that has recently experienced high levels of internal conflict. Examples include Iraq, Syria, Yemen and Nigeria. Use your AI to identify a country and a period of time to analyze. Say a few words about your country case and the time period you will be looking at.\nb. Now, following the steps laid out in module 3.2, filter a few months of conflict data from the UCDP GED dataset for your selected country and convert the coordinates to simple features using the st_as_sf() function from the sf package.\nc. Next, produce a leaflet map that displays markers representing conflict events. Have the markers display the name of the location where the conflict event occurred when the user hovers over them. Have the popup windows display the number of deaths and the date of the event when the user clicks on them. Use “OpenTopoMap” as your basemap.\nd. Now let’s do some research into the location of oil fields. Ask your AI to give you a list of the ten biggest oil fields in your country and their geographic coordinates. Ask your AI how you can export those coordinates to a .csv file. Make sure that your columns are appropriately labeled (e.g. snake case) and save your file as oil_fields.csv in your assignment folder. Then read the data into R using readr and store them in an object called oil_fields.\ne. Now map the oil fields using leaflet(), giving each marker a label that displays the name of the oil field. Do you notice that conflict events occur close to oil fields in your chosen country?\n\n\n\n\n\n\nSubmission\n\n\n\nRender your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.\nBefore submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 3"
@@ -872,9 +872,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html",
     "href": "assignments/coding-assignment-5.html",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "",
-    "text": "For this assignment, you are going to be reproducing a version of this Shiny app and using it to evaluate Samuel Huntington’s classic book, The Third Wave which, according to Google, has been cited more than 19,700 times! For convenience, we will be looking a Journal of Democracy article by Huntington that summarizes his main points from the book. You will be doing most of your coding in the separate app.R template provided for you. A big part of your grade for this assignment will be based on getting that file to produce your Shiny App. However, you can use this document as a worksheet to help generate the various elements of code for your App.\nSubmission note: For this assignment you should submit your working Shiny App code via GitHub. You can use this workbook to develop your code.",
+    "text": "For this assignment, you are going to be reproducing a version of this Shiny app and using it to evaluate Samuel Huntington’s classic book, The Third Wave which, according to Google, has been cited more than 19,700 times! For convenience, we will be looking a Journal of Democracy article by Huntington that summarizes his main points from the book. You will be doing most of your coding in the separate app.R template provided for you. A big part of your grade for this assignment will be based on getting that file to produce your Shiny App. However, you can use this document as a worksheet to help generate the various elements of code for your App.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -883,9 +883,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#overview",
     "href": "assignments/coding-assignment-5.html#overview",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "",
-    "text": "For this assignment, you are going to be reproducing a version of this Shiny app and using it to evaluate Samuel Huntington’s classic book, The Third Wave which, according to Google, has been cited more than 19,700 times! For convenience, we will be looking a Journal of Democracy article by Huntington that summarizes his main points from the book. You will be doing most of your coding in the separate app.R template provided for you. A big part of your grade for this assignment will be based on getting that file to produce your Shiny App. However, you can use this document as a worksheet to help generate the various elements of code for your App.\nSubmission note: For this assignment you should submit your working Shiny App code via GitHub. You can use this workbook to develop your code.",
+    "text": "For this assignment, you are going to be reproducing a version of this Shiny app and using it to evaluate Samuel Huntington’s classic book, The Third Wave which, according to Google, has been cited more than 19,700 times! For convenience, we will be looking a Journal of Democracy article by Huntington that summarizes his main points from the book. You will be doing most of your coding in the separate app.R template provided for you. A big part of your grade for this assignment will be based on getting that file to produce your Shiny App. However, you can use this document as a worksheet to help generate the various elements of code for your App.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -894,9 +894,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#step-1-wrangle-your-data-20-pts",
     "href": "assignments/coding-assignment-5.html#step-1-wrangle-your-data-20-pts",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "Step 1: Wrangle your data (20 pts)",
-    "text": "Step 1: Wrangle your data (20 pts)\nLoad vdemdata, dplyr and readr into a separate R script or code chunk in a Quarto document. Select country_name, year, and three V-Dem democracy indicators: v2x_polyarchy, v2x_libdem, and v2x_paritpdem. Now go to the V-Dem codebook and select four additional indicators related to democracy that you would like to explore. Make sure that your chosen indicators cover the same time period as those in the app (1789-2021). Have a glimpse() and the data to make sure everythign is there. Then store your data in an object called vdem_trends and then save it as a .csv file by the same name.",
+    "text": "Step 1: Wrangle your data (20 pts)\nLoad vdemdata, dplyr, and readr into a separate R script or code chunk in a Quarto document. Select country_name, year, and three V-Dem democracy indicators: v2x_polyarchy, v2x_libdem, and v2x_partipdem. Now go to the V-Dem codebook and select four additional indicators related to democracy that you would like to explore. Have a glimpse() at the data to make sure everything is there. Then store your data in an object called vdem_trends and save it as a .csv file by the same name.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -905,9 +905,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#step-2-do-the-setup-work-20-pts",
     "href": "assignments/coding-assignment-5.html#step-2-do-the-setup-work-20-pts",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "Step 2: Do the setup work (20 pts)",
-    "text": "Step 2: Do the setup work (20 pts)\nNow, in your app.R file, load your packages, load the data into an object called vdem_trends, and create lists of the variables and countries for the ui.\nPackages: You will need to load shiny, shinyWidgets, readr, dplyr, ggplot2 and lubridate.\nData: These will be loaded in from the .csv file you created in Step 1.\nVariable list: Create a list of values using the combine function (c()) to be used in the “Indicator” dropdown menu. Some starter code is provided for you here:\n\nvars &lt;- c(\"Polyarchy\" = \"v2x_polyarchy\"), # be sure to insert the variable names you have \n          \"Liberal Democracy\" = ......   # in your wrangled data on the right hand side\n          )                              # of these equations \n\nCountry names list: To get a list of country names, filter() vdem_trends for one year (tip: you can use max(year) for this), pull() the country column and pipe that into sort() (with no arguments) so that the country names are arranged in alphabetical order. Store the list of country names in an object called countries.\n\ncountries &lt;- vdem_trends |&gt;\n  filter(....) |&gt; # filter what?\n  pull(....) |&gt;   # pull what?\n  sort()          # no arguments for sort",
+    "text": "Step 2: Do the setup work (20 pts)\nNow, in your app.R file, load your packages, load the data into an object called vdem_trends, and create lists of the variables and countries for the ui.\nPackages: You will need to load shiny, shinyWidgets, readr, dplyr, ggplot2 and lubridate.\nData: These will be loaded in from the .csv file you created in Step 1.\nVariable list: Create a list of values using the combine function (c()) to be used in the “Indicator” dropdown menu. Some starter code is provided for you here:\n\nvars &lt;- c(\"Polyarchy\" = \"v2x_polyarchy\"), # be sure to insert the variable names\n          \"Liberal Democracy\" = ......   # from your wrangled data on the right\n          )                              # side of these equations\n\nCountry names list: To get a list of country names, filter() vdem_trends for one year (tip: you can use max(year) for this), pull() the country column and pipe that into sort() (with no arguments) so that the country names are arranged in alphabetical order. Store the list of country names in an object called countries.\n\ncountries &lt;- vdem_trends |&gt;\n  filter(....) |&gt; # filter what?\n  pull(....) |&gt;   # pull what?\n  sort()          # no arguments for sort",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -916,9 +916,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#step-3-define-the-ui-20-pts",
     "href": "assignments/coding-assignment-5.html#step-3-define-the-ui-20-pts",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "Step 3: Define the UI (20 pts)",
-    "text": "Step 3: Define the UI (20 pts)\nDefine the UI using code similar to what we saw for the FRED line chart app in Module 5.2. You will want a quarter of the columns to be occupied by the wellPanel() with the “Indicator:” and “Country:” dropdown menus and some help text. The remaining 3/4 of the space is going to be occupied by your plot output. For the slider input, use this code:\n\n           sliderTextInput(\n             \"range\",\n             NULL,\n             grid = TRUE,\n             choices = 1789:2021,\n             selected = c(1789, 2021),\n             width = \"100%\"\n           )",
+    "text": "Step 3: Define the UI (20 pts)\nDefine the UI using code similar to what we saw for the FRED line chart app in Module 5.2. You will want a quarter of the columns to be occupied by the wellPanel() with the “Indicator:” and “Country:” dropdown menus and some help text. The remaining 3/4 of the space is going to be occupied by your plot output. For the slider input, use this code:\n\nsliderTextInput(\n  \"range\",\n  NULL,\n  grid = TRUE,\n  choices = 1970:2023,\n  selected = c(1970, 2023),\n  width = \"100%\"\n)",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -927,9 +927,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#step-4-define-the-server-logic-20-pts",
     "href": "assignments/coding-assignment-5.html#step-4-define-the-server-logic-20-pts",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "Step 4: Define the server logic (20 pts)",
-    "text": "Step 4: Define the server logic (20 pts)\nNow the tricky part. This app is going to require two reactive functions. The first is going to be for the country and indicator dropdowns:\n\n  ctry_indicator &lt;- reactive({\n    vdem_trends |&gt;\n    filter(country == INPUT) |&gt; # replace INPUT with relevant input\n    select(year, INPUT)         # ditto\n    })\n\nThe second is going to be for the year slider:\n\n  plot_df &lt;- reactive({\n    ctry_indicator() |&gt;\n    filter(year %in% (INPUT:INPUT)) # replace INPUT with relevant input\n   })\n\nNow you need to render the plot. In the ggplot() call your data is going to be the saved in the second reactive function plot_df() (don’t forget the parentheses!). In aes() x will simply be year but y is a little tricky. Here you need to call get(input$indicator)) You might have guessed the input$indicator part, but to non-standard evaluation in aes(), you cannot pass your column into ggplot before you remove the parentheses. get() is one of many ways to do this.\nFor the y-labels, you can use names(vars[which(vars == input$indicator)])) to get the name of the selected indicator.",
+    "text": "Step 4: Define the server logic (20 pts)\nNow the tricky part. This app is going to require two reactive functions. The first is going to be for the country and indicator dropdowns:\n\nctry_indicator &lt;- reactive({\n  vdem_trends |&gt;\n  filter(country == INPUT) |&gt; # replace INPUT with relevant input\n  select(year, INPUT)         # ditto\n  })\n\nThe second is going to be for the year slider:\n\nplot_df &lt;- reactive({\n  ctry_indicator() |&gt;\n  filter(year %in% (INPUT:INPUT)) # replace INPUT with relevant input\n })\n\nNow you need to render the plot. In the ggplot() call your data is going to be saved in the second reactive function plot_df() (don’t forget the parentheses!). In aes() x will simply be year but y is a little tricky. Here you need to call .data[[input$indicator]]. You might have guessed the input$indicator part, but due to non-standard evaluation in aes(), you cannot pass your column name directly as a string. The .data[[]] pronoun is the modern way to handle this. See Module 5.1 for more on this.\nFor the y-labels, you can use names(vars[which(vars == input$indicator)])) to get the name of the selected indicator.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -938,9 +938,9 @@
   {
     "objectID": "assignments/coding-assignment-5.html#step-5-run-the-app-and-interpret-the-results-20-pts",
     "href": "assignments/coding-assignment-5.html#step-5-run-the-app-and-interpret-the-results-20-pts",
-    "title": "Assignment 5",
+    "title": "Coding Assignment 5",
     "section": "Step 5: Run the app and interpret the results (20 pts)",
-    "text": "Step 5: Run the app and interpret the results (20 pts)\nUse the shinyApp() funciton to run the app. Does it work? If not, try some of the debugging techniques we talked about in class or reach out on Discord for help.\nOnce you get the app running, take some time to explore the data in a few of your favorite countries. How do the trends in your chosen cases speak to Huntington’s idea about a third wave of democratization or, anecdotally, the types barriers that remain to democratization in that country? Type your answer below (not in your app.R file!).",
+    "text": "Step 5: Run the app and interpret the results (20 pts)\nUse the shinyApp() function to run the app. Does it work? If not, try some of the debugging techniques we talked about in class or reach out on Discord for help.\nOnce you get the app running, take some time to explore the data in a few of your favorite countries. How do the trends in your chosen cases speak to Huntington’s idea about a third wave of democratization or, anecdotally, the types of barriers that remain to democratization in that country? Type your answer below (not in your app.R file!).\n\n\n\n\n\n\nSubmission\n\n\n\nRender your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.\nBefore submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 5"
@@ -967,9 +967,9 @@
   {
     "objectID": "assignments/coding-assignment-4.html",
     "href": "assignments/coding-assignment-4.html",
-    "title": "Assignment 4",
+    "title": "Coding Assignment 4",
     "section": "",
-    "text": "There are two parts to this assignment. In Part I, you will use tidycensus and the gt package to produce nice tables of census data. In Part II you will use peacesciencer, broom and modelsummary to do an analysis of conflict onset.`\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "There are two parts to this assignment. In Part I, you will use tidycensus and the gt package to produce nice tables of census data. In Part II you will use peacesciencer, broom and modelsummary to do an analysis of conflict onset.\n\n# load packages: tidyverse, tidycensus, gt, peacesciencer, broom, modelsummary",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 4"
@@ -978,9 +978,9 @@
   {
     "objectID": "assignments/coding-assignment-4.html#overview",
     "href": "assignments/coding-assignment-4.html#overview",
-    "title": "Assignment 4",
+    "title": "Coding Assignment 4",
     "section": "",
-    "text": "There are two parts to this assignment. In Part I, you will use tidycensus and the gt package to produce nice tables of census data. In Part II you will use peacesciencer, broom and modelsummary to do an analysis of conflict onset.`\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "There are two parts to this assignment. In Part I, you will use tidycensus and the gt package to produce nice tables of census data. In Part II you will use peacesciencer, broom and modelsummary to do an analysis of conflict onset.\n\n# load packages: tidyverse, tidycensus, gt, peacesciencer, broom, modelsummary",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 4"
@@ -989,9 +989,9 @@
   {
     "objectID": "assignments/coding-assignment-4.html#part-i-income-tables",
     "href": "assignments/coding-assignment-4.html#part-i-income-tables",
-    "title": "Assignment 4",
+    "title": "Coding Assignment 4",
     "section": "Part I: Income Tables",
-    "text": "Part I: Income Tables\n\nStep 1: Download data on income quintiles (20 pts)\nChoose your favorite state or one that you think would be interesting to analyze from the standpoint of income distrubitions. Using tidycensus, download data on income quintiles at the county level. Be sure to specify “county for geography = and the state that you want to download the data from in state =. Also make sure to clean the variable names and use a mutate(name = str_replace_all()) so that you just have the county names and not”X County, State” in your tables.\n\n\nStep 2: Make a gt table (20 pts)\nUse the gt package to generate a table of the income quintiles for the counties in your selected state. Make sure to add a title and subtitle, relabel the columns, format the numbers as dollar figures and add a source note. Take other steps to beautify your table as you see fit. Finally, interpret the table. Which counties stand out?",
+    "text": "Part I: Income Tables\n\nStep 1: Download data on income quintiles (20 pts)\nChoose your favorite state or one that you think would be interesting to analyze from the standpoint of income distributions. Using tidycensus, download data on income quintiles at the county level. Be sure to specify “county” for geography = and the state that you want to download the data from in state =. Also make sure to clean the variable names and use a mutate(name = str_replace_all()) so that you just have the county names and not “X County, State” in your tables.\n\n\nStep 2: Make a gt table (20 pts)\nUse the gt package to generate a table of the income quintiles for the counties in your selected state. Make sure to add a title and subtitle, relabel the columns, format the numbers as dollar figures and add a source note. Take other steps to beautify your table as you see fit. Finally, interpret the table. Which counties stand out?",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 4"
@@ -1000,9 +1000,9 @@
   {
     "objectID": "assignments/coding-assignment-4.html#part-ii-regression-tables",
     "href": "assignments/coding-assignment-4.html#part-ii-regression-tables",
-    "title": "Assignment 4",
+    "title": "Coding Assignment 4",
     "section": "Part II: Regression Tables",
-    "text": "Part II: Regression Tables\nFor Part II of this assignment, we are going to be evaluating another classic article in political science: Fearon and Laitin’s Ethnicity, Insurgency and Civil War. According to Google, this article has been cited about 11k times!\nFearon and Laitin’s provocative thesis is that ethnic diversity (per se) is not an important predictor of civil conflict. In this assignment, we are going to try to approximate F&L’s analysis using the peacesciencer package and produce some regression tables to interpret our results.\n\nStep 1: Build your dataset (20 pts)\nUsing create_stateyears() and the various “add” functions (e.g. add_ucdp_acd(), add_democracy(), etc.), assemble a data frame for analyzing conflict onset as we did in module 4.2. One benefit we have of doing this analysis today is an additional 20 years of data, so filter your data for 1946 to 2019.\n\n\nStep 2: Run a regression (20 pts)\nLoad broom and regress ucdponset on ethfrac, relfrac, v2x_polyarchy, rugged, wbgdppc2011est and wbpopest. Use tidy() to review the results and use mutate_if() to round the variables four or five decimal places. Compare your results to Table 1 in Fearon and Laitin’s article. Are there any differences in your results?\n\n\nStep 3: Make a table with multiple models (20 pts)\nNow use modelsummary to produce a handsome table with multiple models, but change out some of the measures. Try looking at ethnic and religious polarization (ethpol, relpol) instead of fractionalization. For democracy, use the polity2 score. And for terrain, try newlmtnest (a measure of mountainous terrain) instead of rugged. How do yur results change and how are they different from Fearon and Laitin’s results?",
+    "text": "Part II: Regression Tables\nFor Part II of this assignment, we are going to be evaluating another classic article in political science: Fearon and Laitin’s Ethnicity, Insurgency and Civil War. According to Google, this article has been cited about 11k times!\nFearon and Laitin’s provocative thesis is that ethnic diversity (per se) is not an important predictor of civil conflict. In this assignment, we are going to try to approximate F&L’s analysis using the peacesciencer package and produce some regression tables to interpret our results.\n\nStep 1: Build your dataset (20 pts)\nUsing create_stateyears() and the various “add” functions (e.g. add_ucdp_acd(), add_democracy(), etc.), assemble a data frame for analyzing conflict onset as we did in module 4.2. One benefit we have of doing this analysis today is an additional 20 years of data, so filter your data for 1946 to 2019.\n\n\nStep 2: Run a regression (20 pts)\nLoad broom and regress ucdponset on ethfrac, relfrac, v2x_polyarchy, rugged, wbgdppc2011est and wbpopest. Use tidy() to review the results and use mutate_if() to round the variables four or five decimal places. Compare your results to Table 1 in Fearon and Laitin’s article. Are there any differences in your results?\n\n\nStep 3: Make a table with multiple models (20 pts)\nNow use modelsummary to produce a handsome table with multiple models, but change out some of the measures. Try looking at ethnic and religious polarization (ethpol, relpol) instead of fractionalization. For democracy, use the polity2 score. And for terrain, try newlmtnest (a measure of mountainous terrain) instead of rugged. How do your results change and how are they different from Fearon and Laitin’s results?",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 4"
@@ -1011,9 +1011,9 @@
   {
     "objectID": "assignments/coding-assignment-4.html#bonus-section-use-confidence-intervals-instead-of-tables-10-pts",
     "href": "assignments/coding-assignment-4.html#bonus-section-use-confidence-intervals-instead-of-tables-10-pts",
-    "title": "Assignment 4",
+    "title": "Coding Assignment 4",
     "section": "Bonus section: Use confidence intervals instead of tables (10 pts)",
-    "text": "Bonus section: Use confidence intervals instead of tables (10 pts)\n1. Display median income with a plot of point estimates and confidence intervals for the counties in your selected state. What additional light does such a plot shed on your analysis of the income distrubtion in that state? (5 pts)\n2. Use modelplot to display the results of one of your regression models with point estimates and confidence intervals. What are some of the tradeoffs associated with displaying your results in this fashion as opposed to doing it in tabular form?",
+    "text": "Bonus section: Use confidence intervals instead of tables (10 pts)\n1. Display median income with a plot of point estimates and confidence intervals for the counties in your selected state. What additional light does such a plot shed on your analysis of the income distribution in that state? (5 pts)\n2. Use modelplot to display the results of one of your regression models with point estimates and confidence intervals. What are some of the tradeoffs associated with displaying your results in this fashion as opposed to doing it in tabular form? (5 pts)\n\n\n\n\n\n\nSubmission\n\n\n\nRender your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.\nBefore submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 4"
@@ -1024,7 +1024,7 @@
     "href": "assignments/coding-assignment-2.html",
     "title": "Coding Assignment 2",
     "section": "",
-    "text": "For this assignment, you are going to evaluate modernization theory as laid out in Seymour Martin Lipset’s classic article entitled “Some Social Requisites of Democracy: Economic Development and Political Legitimacy.” How classic is this article? According to Google Scholar, this piece has been cited more than 11.5 thousand times!\nWe are going to use data from V-Dem and modern data viz tools to explore Lipset’s hypothesis that economic modernization is highly correlated with democracy. We have already done this to some extent by looking at the relationship between wealth and the polyarchy score. But we are going to broaden things out by looking at other measures of modernization and democracy contained in the V-Dem dataset.\nBefore starting on this assignment, you will want to have a look at the V-Dem codebook. Look through the sections titled “V-Dem Indicators” and “Background Factors (E).” There are five democracy indicators, one of which is the polyarchy index. There are a number of background factors, many of which pertain to economic modernization. We are going to be looking at the relationship between these two sets of variables.\nNow have a look at “Some Social Requisites of Democracy” and in particular pay attention to the indicators in Table II and the discussion surrounding them. Think of each indicator (e.g. urbanization, education, etc.) as a sub-hypothesis of his theory. Which of these sub-hypotheses about modernization do you think is most compelling? Which would you like to test?\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, you are going to evaluate modernization theory as laid out in Seymour Martin Lipset’s classic article entitled “Some Social Requisites of Democracy: Economic Development and Political Legitimacy.” How classic is this article? According to Google Scholar, this piece has been cited more than 11.5 thousand times!\nWe are going to use data from V-Dem and modern data viz tools to explore Lipset’s hypothesis that economic modernization is highly correlated with democracy. We have already done this to some extent by looking at the relationship between wealth and the polyarchy score. But we are going to broaden things out by looking at other measures of democracy contained in the V-Dem dataset. Specifically, you can choose among the following four measures:\n\nliberal democracy (v2x_libdem)\nparticipatory democracy (v2x_partipdem)\ndeliberative democracy (v2x_delibdem)\negalitarian democracy (v2x_egaldem)\n\nOr you can use some other democracy indicator from the V-Dem database. For measuring modernization we will use GDP per capita (e_gdppc). Use the vdemdata package to retrieve your indicators.\nFor an extra challenge, you could try merging V-Dem democracy indicators with GDP per capita taken from the World Bank using the wbstats package, but this is not required.\nStart by running this code chunk to import all of the packages you will need for this exercise. Then start working through the code and questions below. Feel free to grab relevant code chunks from the modules or the exercises that we have used in class so far.\n\nlibrary(tidyverse)\nlibrary(tidyr)\nlibrary(colorBlindness)\nlibrary(vdemdata)\nlibrary(plotly)\nlibrary(gganimate)",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
@@ -1035,62 +1035,84 @@
     "href": "assignments/coding-assignment-2.html#overview",
     "title": "Coding Assignment 2",
     "section": "",
-    "text": "For this assignment, you are going to evaluate modernization theory as laid out in Seymour Martin Lipset’s classic article entitled “Some Social Requisites of Democracy: Economic Development and Political Legitimacy.” How classic is this article? According to Google Scholar, this piece has been cited more than 11.5 thousand times!\nWe are going to use data from V-Dem and modern data viz tools to explore Lipset’s hypothesis that economic modernization is highly correlated with democracy. We have already done this to some extent by looking at the relationship between wealth and the polyarchy score. But we are going to broaden things out by looking at other measures of modernization and democracy contained in the V-Dem dataset.\nBefore starting on this assignment, you will want to have a look at the V-Dem codebook. Look through the sections titled “V-Dem Indicators” and “Background Factors (E).” There are five democracy indicators, one of which is the polyarchy index. There are a number of background factors, many of which pertain to economic modernization. We are going to be looking at the relationship between these two sets of variables.\nNow have a look at “Some Social Requisites of Democracy” and in particular pay attention to the indicators in Table II and the discussion surrounding them. Think of each indicator (e.g. urbanization, education, etc.) as a sub-hypothesis of his theory. Which of these sub-hypotheses about modernization do you think is most compelling? Which would you like to test?\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, you are going to evaluate modernization theory as laid out in Seymour Martin Lipset’s classic article entitled “Some Social Requisites of Democracy: Economic Development and Political Legitimacy.” How classic is this article? According to Google Scholar, this piece has been cited more than 11.5 thousand times!\nWe are going to use data from V-Dem and modern data viz tools to explore Lipset’s hypothesis that economic modernization is highly correlated with democracy. We have already done this to some extent by looking at the relationship between wealth and the polyarchy score. But we are going to broaden things out by looking at other measures of democracy contained in the V-Dem dataset. Specifically, you can choose among the following four measures:\n\nliberal democracy (v2x_libdem)\nparticipatory democracy (v2x_partipdem)\ndeliberative democracy (v2x_delibdem)\negalitarian democracy (v2x_egaldem)\n\nOr you can use some other democracy indicator from the V-Dem database. For measuring modernization we will use GDP per capita (e_gdppc). Use the vdemdata package to retrieve your indicators.\nFor an extra challenge, you could try merging V-Dem democracy indicators with GDP per capita taken from the World Bank using the wbstats package, but this is not required.\nStart by running this code chunk to import all of the packages you will need for this exercise. Then start working through the code and questions below. Feel free to grab relevant code chunks from the modules or the exercises that we have used in class so far.\n\nlibrary(tidyverse)\nlibrary(tidyr)\nlibrary(colorBlindness)\nlibrary(vdemdata)\nlibrary(plotly)\nlibrary(gganimate)",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-2.html#step-1-gather-your-data-20-pts",
-    "href": "assignments/coding-assignment-2.html#step-1-gather-your-data-20-pts",
+    "objectID": "assignments/coding-assignment-2.html#step-1-make-a-line-chart-showing-country-trends-20-pts",
+    "href": "assignments/coding-assignment-2.html#step-1-make-a-line-chart-showing-country-trends-20-pts",
     "title": "Coding Assignment 2",
-    "section": "Step 1: Gather Your Data (20 pts)",
-    "text": "Step 1: Gather Your Data (20 pts)\nUse the vdemdata package to download data for your analysis. Since we already looked at the polyarchy score and wealth in class, you need to use a different measure of democracy and a different background factor for your analysis. Use a select() verb to include country, year, region (e_regionpol_6C), at least one of the other four measures of democracy, and one background factor that is not per capita GDP. Store your data in an object called dem_data. Pipe in a mutate() verb and use case_match() to label the regions. Review module 1.2 if you are confused on how to do this.",
+    "section": "Step 1: Make a line chart showing country trends (20 pts)",
+    "text": "Step 1: Make a line chart showing country trends (20 pts)\na) Use vdem to retrieve your chosen democracy indicator for five countries from different regions that you expect might be interesting to compare for 1970 onward and store it in an object called line_chart_dta. Use select() to keep country name, year, and your indicator, and filter() to select your countries and years. Use glimpse() or look at the data frame to make sure everything looks right.\nb) Now choose one of the democracy indicators and visualize it with a line chart using ggplot2 for the countries that you chose. Be sure to specify x =, y = and color = in your aes() call and use geom_line() to create the chart. Add appropriate axis labels, a title and a caption. Now add a colorblind-friendly color map and an attractive theme.\nc) Add a vertical line at an interesting point in history or a horizontal line at a notable point on the y-axis and an annotation explaining the significance of the line.\nd) In a few sentences below, interpret your chart. Describe the levels and trends in democracy scores. Put your answer right below this line in markdown text (DO NOT write your comments in a code chunk!!).",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-2.html#step-2-make-a-bar-chart-20-pts",
-    "href": "assignments/coding-assignment-2.html#step-2-make-a-bar-chart-20-pts",
+    "objectID": "assignments/coding-assignment-2.html#step-2-make-a-column-chart-comparing-country-levels-20-pts",
+    "href": "assignments/coding-assignment-2.html#step-2-make-a-column-chart-comparing-country-levels-20-pts",
     "title": "Coding Assignment 2",
-    "section": "Step 2: Make a bar chart (20 pts)",
-    "text": "Step 2: Make a bar chart (20 pts)\na) Insert a code chunk below this line and label it. Wrangle your data for the bar chart. Filter by year to include data since 2000, group by region and summarize by mean. Save the new data in an object called bar_chart_data.\nb) Insert a code chunk below this line and label it. Use ggplot() and geom_col() to create a bar chart showing levels of democracy across the regions with your wrangled data. Make sure to add appropriate axis labels, a title and a caption. Add a theme to spruce it up a bit.\nNote: From here on out I will expect you to know to add a code chunk and label it.",
+    "section": "Step 2: Make a column chart comparing country levels (20 pts)",
+    "text": "Step 2: Make a column chart comparing country levels (20 pts)\na) Now use a group_by(), summarize() sequence to take country averages for the data that you retrieved for your line chart in Step 1 and store it as an object called column_chrt_dta.\nb) Use ggplot() and geom_col() to visualize one of the democracy measures with a column chart (you can use the same measure as in Step 1 or a different one). Use fct_reorder() to arrange the columns in order of the y-axis values. Make sure to add appropriate axis labels, a title and a caption. Change the fill color and add a theme to spruce it up a bit. Remember that these are averages over the same number of years as the line chart you made in Step 1.\nc) Interpret your column chart. Does the evidence in the column chart roughly match what you saw in the line chart above?",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-2.html#step-3-make-a-colorblind-friendly-line-chart-20-pts",
-    "href": "assignments/coding-assignment-2.html#step-3-make-a-colorblind-friendly-line-chart-20-pts",
+    "objectID": "assignments/coding-assignment-2.html#step-3-make-a-scatter-plot-20-pts",
+    "href": "assignments/coding-assignment-2.html#step-3-make-a-scatter-plot-20-pts",
     "title": "Coding Assignment 2",
-    "section": "Step 3: Make a colorblind-friendly line chart (20 pts)",
-    "text": "Step 3: Make a colorblind-friendly line chart (20 pts)\na) Filter your dem_data to include three or four countries of your choosing and create a line chart of your democracy indicator. You can save the data as a new data frame called dem_data_line or you can pipe your filtered data directly into ggplot().\nb) Use cvdPlot() to view your chart from the standpoint of someone with red-green color blindness and describe what you see.\nc) Add a colorblind-friendly color map using viridis or ColorBrewer.\nd) Run the plot through cvdPlot() and describe what you see. Is your plot colorblind friendly?",
+    "section": "Step 3: Make a scatter plot (20 pts)",
+    "text": "Step 3: Make a scatter plot (20 pts)\na) Use vdem to grab democracy indicators along with GDP per capita (e_gdppc) and region codes (e_regionpol_6C) for all countries for one year of your choosing. Use select() to keep the variables you need and filter() to select your year. Be sure to rename variables where needed and use mutate() and case_match() to assign region names.\nb) Use the data from part a) to build a scatter plot with ggplot2. Put GDP on the x-axis and one of the measures of democracy on the y-axis and color the points by region. Stretch the x-axis on a log scale and use the scales package to add a prefix and suffix to the x-axis numbers to indicate that they are dollar figures. Add appropriate labels and a viridis color map and add your favorite theme.\nc) Next add a trend line with geom_smooth() preferably with a linear model (method = “lm”).",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-2.html#step-4-make-a-scatter-plot-with-annotation-20-pts",
-    "href": "assignments/coding-assignment-2.html#step-4-make-a-scatter-plot-with-annotation-20-pts",
+    "objectID": "assignments/coding-assignment-2.html#step-4-additional-tasks-20-pts",
+    "href": "assignments/coding-assignment-2.html#step-4-additional-tasks-20-pts",
     "title": "Coding Assignment 2",
-    "section": "Step 4: Make a scatter plot with annotation (20 pts)",
-    "text": "Step 4: Make a scatter plot with annotation (20 pts)\na) Using dem__data, filter out a ten year period. This could be the most recent ten years of data or a distinct ten year period that you want to look at. If you choose a recent period, make sure that you have enough data to take an average of ten years. Some of the background variables in V-Dem are not entirely up to date. You can check the availability of the data by looking at the V-Dem codebook or using glimpse() or View() to look at your data.Group by country and summarize by mean. Save your your data in a new object called dem_data_scatter.\nb) Now build a scatter plot with ggplot2. Put your modernization-related variable (background variable) on the x-axis and your measure of democracy on the y-axis and color the points by region. Add a trend line with geom_smooth(). This could be a linear model or a loess curve. Add appropriate labels and a viridis or ColorBrewer color map and change the theme to theme_minimal.\nc) Add an annotation to your scatter plot using annotate() and geom_vline() or geom_hline(). Your annotation could highlight a particular year or level of democracy that is relevant for your analysis. Explain briefly why you included this annotation",
+    "section": "Step 4: Additional Tasks (20 pts)",
+    "text": "Step 4: Additional Tasks (20 pts)\na) Facet wrap your scatter plot by region.\nb) Remove the facet_wrap() call and display the relationship for one region and use geom_text() to label your points.\nc) Remove the text labels and make your scatter plot interactive using ggplotly(). Make sure that your tooltip includes the information that you want to display to the user.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
     ]
   },
   {
-    "objectID": "assignments/coding-assignment-2.html#step-5-make-your-scatter-plot-interactive-20-pts",
-    "href": "assignments/coding-assignment-2.html#step-5-make-your-scatter-plot-interactive-20-pts",
+    "objectID": "assignments/coding-assignment-2.html#step-5-interpretation-10-pts",
+    "href": "assignments/coding-assignment-2.html#step-5-interpretation-10-pts",
     "title": "Coding Assignment 2",
-    "section": "Step 5: Make your scatter plot interactive (20 pts)",
-    "text": "Step 5: Make your scatter plot interactive (20 pts)\na) Make your scatter plot interactive using ggplotly(). Make sure that your tooltip includes the information that you want to display to the user.\nb) Interpret your results. Does your plot show a relationship between the two variables? Which countries are outliers in your analysis? Why do you think they are outliers and how does your explanation relate to Lipset’s hypothesis?",
+    "section": "Step 5: Interpretation (10 pts)",
+    "text": "Step 5: Interpretation (10 pts)\nInterpret your results from your visualizations, including the scatter plot, line chart and column chart. Is there an obvious relationship between development and democracy? Do the data generally support Lipset’s theory?",
+    "crumbs": [
+      "Coding Assignments",
+      "Coding Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/coding-assignment-2.html#step-6-rendering-10-pts",
+    "href": "assignments/coding-assignment-2.html#step-6-rendering-10-pts",
+    "title": "Coding Assignment 2",
+    "section": "Step 6: Rendering (10 pts)",
+    "text": "Step 6: Rendering (10 pts)\nUse a Quarto theme to improve the look of the HTML output. Press the render button to create your HTML document. If there are lots of messages or warnings coming out of your code chunks, consider suppressing them with the appropriate chunk options or the execute options in the YAML header. If you get any errors, go back and fix them and try again until the document renders.",
+    "crumbs": [
+      "Coding Assignments",
+      "Coding Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/coding-assignment-2.html#extra-credit-3-pts",
+    "href": "assignments/coding-assignment-2.html#extra-credit-3-pts",
+    "title": "Coding Assignment 2",
+    "section": "Extra Credit (3 pts)",
+    "text": "Extra Credit (3 pts)\na) Use vdem to download time series data and gganimate to make an animated version of your scatter plot.\nb) Interpret the plot. Does it tell an interesting story that the static plot did not?\n\n\n\n\n\n\nSubmission\n\n\n\nRender your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud — either way, make sure the rendered HTML is included in the folder before zipping.\nBefore submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 2"
@@ -1101,7 +1123,7 @@
     "href": "assignments/coding-assignment-1.html",
     "title": "Coding Assignment 1",
     "section": "",
-    "text": "For this assignment, you are going to download some variables using the wbstats and vdemdata packages. Then you are going to wrangle these data and merge the two data sets into one and analyze how they relate to women’s representation in national parliaments. Do your work for each step in the code chunks provided. Be sure to label your code chunks.\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, you are going to download some variables using the wbstats and vdemdata packages. Then you are going to wrangle these data and merge the two data sets into one and analyze how they relate to women’s representation in national parliaments. Do your work for each step in the code chunks provided. Be sure to label your code chunks.\nHere is a setup code chunk. You can load all of your packages here or as you go along in the code chunks below using the library() function. However, note that you really only need to load a library once per document.\n\nlibrary(tidyverse)\nlibrary(wbstats)\nlibrary(vdemdata)\nlibrary(countrycode)\n\n\n\n\n\n\n\nWarning\n\n\n\nPlease refrain from installing any packages in your code chunks because this will also install them every time the code chunk is run or your document is rendered. This may not be desirable for you or whoever is looking at or running your code (e.g. me).",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 1"
@@ -1112,7 +1134,7 @@
     "href": "assignments/coding-assignment-1.html#overview",
     "title": "Coding Assignment 1",
     "section": "",
-    "text": "For this assignment, you are going to download some variables using the wbstats and vdemdata packages. Then you are going to wrangle these data and merge the two data sets into one and analyze how they relate to women’s representation in national parliaments. Do your work for each step in the code chunks provided. Be sure to label your code chunks.\nSubmission note: Accept the invitation on Blackboard to submit this assignment via GitHub.",
+    "text": "For this assignment, you are going to download some variables using the wbstats and vdemdata packages. Then you are going to wrangle these data and merge the two data sets into one and analyze how they relate to women’s representation in national parliaments. Do your work for each step in the code chunks provided. Be sure to label your code chunks.\nHere is a setup code chunk. You can load all of your packages here or as you go along in the code chunks below using the library() function. However, note that you really only need to load a library once per document.\n\nlibrary(tidyverse)\nlibrary(wbstats)\nlibrary(vdemdata)\nlibrary(countrycode)\n\n\n\n\n\n\n\nWarning\n\n\n\nPlease refrain from installing any packages in your code chunks because this will also install them every time the code chunk is run or your document is rendered. This may not be desirable for you or whoever is looking at or running your code (e.g. me).",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 1"
@@ -1123,7 +1145,7 @@
     "href": "assignments/coding-assignment-1.html#step-1-download-data-from-v-dem-20pts",
     "title": "Coding Assignment 1",
     "section": "Step 1: Download data from V-Dem (20pts)",
-    "text": "Step 1: Download data from V-Dem (20pts)\nLook at the V-Dem codebook. Identify two measures of democracy that are not the polyarchy score that we used in Module 1.2.\nTry to pick variables that will relate to women’s representation and read the description of the variable to make sure that it includes data for a sufficient number of years, e.g. that the data will be somewhat recent. Select the most recent 20 years of data for your analysis.\nMake sure to load the packages that you need and glimpse() the data or View() it to make sure that it downloaded properly.",
+    "text": "Step 1: Download data from V-Dem (20pts)\nLook at the V-Dem codebook. Identify two measures of democracy that are not the polyarchy score that we used in Module 1.2.\nTry to pick variables that will relate to women’s representation and read the description of the variable to make sure that it includes data for a sufficient number of years, e.g. that the data will be somewhat recent. Select the most recent 20 years of data for your analysis.\nUse glimpse() or View() to make sure that the data downloaded properly.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 1"
@@ -1134,7 +1156,7 @@
     "href": "assignments/coding-assignment-1.html#step-2-download-data-from-the-world-bank-20-pts",
     "title": "Coding Assignment 1",
     "section": "Step 2: Download data from the World Bank (20 pts)",
-    "text": "Step 2: Download data from the World Bank (20 pts)\nNext, download the variable on women’s represenation that we used in Module 1.2 (“SG.GEN.PARL.ZS”) and at least one additional measure related to women’s empowerment. Go to the WDI site the wb_search() function to identify relevant variables. Download the most recent 20 years of data for your analysis.\nMake sure that the indicator has enough data to conduct your analysis, i.e. that it has data for most countries and years.",
+    "text": "Step 2: Download data from the World Bank (20 pts)\nNext, download the variable on women’s represenation that we used in Module 1.2 (“SG.GEN.PARL.ZS”) and at least one additional measure related to women’s empowerment. Go to the WDI site the wb_search() function to identify relevant variables. Download the most recent 20 years of data for your analysis.\n\n\n\n\n\n\nImportant\n\n\n\nTry to make sure you download indicators with enough data to conduct your analysis. You won’t get great results if there are too many NAs.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 1"
@@ -1167,7 +1189,7 @@
     "href": "assignments/coding-assignment-1.html#step-5-interpret-your-data-20-pts",
     "title": "Coding Assignment 1",
     "section": "Step 5: Interpret your data (20 pts)",
-    "text": "Step 5: Interpret your data (20 pts)\nWrite a paragraph or so relating your insights to the Norris reading about electoral reform and women’s representation. Picking a handful of country cases from your data, how does your analysis relate to her arguments about the relevance of electoral systems, statutory quotas, reserved seats or voluntary quotas?",
+    "text": "Step 5: Interpret your data (20 pts)\nWrite a paragraph or so relating your insights to the Norris reading about electoral reform and women’s representation. Picking a handful of country cases from your data, how does your analysis relate to her arguments about the relevance of electoral systems, statutory quotas, reserved seats or voluntary quotas?\n\n\n\n\n\n\nWarning\n\n\n\nDon’t write your paragraphs or any interpretation or analysis in a code chunk. Use markdown text. Quarto is designed to be a literate programming tool, so you can write your analysis in markdown text and include code chunks when necessary to support your argument.\n\n\n\n\n\n\n\n\nSubmission\n\n\n\nRender your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud. Either way, make sure the rendered HTML is included in the folder before zipping.\nBefore submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.",
     "crumbs": [
       "Coding Assignments",
       "Coding Assignment 1"
@@ -2097,7 +2119,7 @@
     "href": "modules/module-5.1.html#server",
     "title": "Module 5.1",
     "section": "Server",
-    "text": "Server\n\nThe server function is where you are going to put the logic and computations of the application. The server function receives input from the user interface, processes it, and generates the corresponding output. It can perform calculations, query databases, apply statistical models, and produce visualizations.\nThe server function contains three arguments. Two of them (input and output) are mandatory. session is an optional parameter that controls the behavior of the app during the user session that we won’t get into here. But we will keep it in the function call for now just to remind us that it is there.\nNext we are going to define the output of the app with output$scatterplot &lt;- renderPlot({}). This bit of code is going to render a plot and then save it to the output in an object called scatterplot. Remember that in the UI, we defined our plot output as plotOutput(\"scatterplot\"). This is where that object scatterplot is going to come from. The scatter plot is going to be created in two steps. First we are going to reactively retrieve the data each time the user selects new inputs. To do this we are going to use the inputs (xcol, ycol) from the UI to subset our data frame demdata, e.g. dem_data[, c(input$xcol, input$ycol, \"region\")]. That is going to create a three-column data frame with the user’s selected x variable, y variable and the region coding and store it in an object called selectedData.\nFrom there, we take selectedData and use it to create a scatter plot with ggplot2. This is done in the usual way, except for a couple of things. First, in our aes() call we need to use get() to specify the x and y variables. aes() uses nonstandard evaluation to capture variable names, meaning that the bare column names of the data frame are read directly so that you do not have to explicitly quote the inputs. However, in this case the names of the inputs are being passed as a string from the user. The get() function enables us to retrieve the value of an object based on its name. So our aes() call will be aes(x = get(x = input$xcol), y = get(input$ycol)).\nThe other thing we need to do is to add some special code to deal with the x- and y-axis labels because these are going to change every time the user selects a different variable. Here we are going to use the names() function to return the names of the the object selected in the vars vector of variable names. To make sure we get the right name from the vector, we are going to use the which() function. which() returns the value that satisfies a given function, in this case the index number of the vars vector that matches the user input. So for example, our x label will be defined as x = names(vars[which(vars == input$xcol)]. Here the number returned by [which(vars == input$xcol)] is going to be used to subset the vars list so that x displays the name of the variable selected by the user.\n\n# Define server logic required to draw a scatter plot\nserver &lt;- function(input, output, session) {\n  \n  # Render the plot\n  output$scatterplot &lt;- renderPlot({\n    \n    # ggplot call\n    ggplot(dem_data, aes(x = get(input$xcol), y = get(input$ycol))) +\n      geom_point(aes(color = region)) +\n      geom_smooth(method = \"loess\") +\n      scale_color_viridis_d(option = \"plasma\") +\n      theme_minimal() +\n      labs(\n        x =  names(vars[which(vars == input$xcol)]), # select names in vars that\n        y =  names(vars[which(vars == input$ycol)]), # match input selections\n        caption = \"Source: V-Dem Institute\",\n        color = \"Region\"\n      )\n  })\n}",
+    "text": "Server\n\nThe server function is where you are going to put the logic and computations of the application. The server function receives input from the user interface, processes it, and generates the corresponding output. It can perform calculations, query databases, apply statistical models, and produce visualizations.\nThe server function contains three arguments. Two of them (input and output) are mandatory. session is an optional parameter that controls the behavior of the app during the user session that we won’t get into here. But we will keep it in the function call for now just to remind us that it is there.\nNext we are going to define the output of the app with output$scatterplot &lt;- renderPlot({}). This bit of code is going to render a plot and then save it to the output in an object called scatterplot. Remember that in the UI, we defined our plot output as plotOutput(\"scatterplot\"). This is where that object scatterplot is going to come from. The scatter plot is going to be created in two steps. First we are going to reactively retrieve the data each time the user selects new inputs. To do this we are going to use the inputs (xcol, ycol) from the UI to subset our data frame demdata, e.g. dem_data[, c(input$xcol, input$ycol, \"region\")]. That is going to create a three-column data frame with the user’s selected x variable, y variable and the region coding and store it in an object called selectedData.\nFrom there, we take selectedData and use it to create a scatter plot with ggplot2. This is done in the usual way, except for a couple of things. First, in our aes() call we need to use .data[[]] to specify the x and y variables. aes() uses nonstandard evaluation to capture variable names, meaning that the bare column names of the data frame are read directly so that you do not have to explicitly quote the inputs. However, in this case the names of the inputs are being passed as a string from the user. The .data[[]] pronoun from rlang is the modern, recommended way to handle this — it accesses a column by name from the data frame passed to ggplot(). So our aes() call will be aes(x = .data[[input$xcol]], y = .data[[input$ycol]]).\n\n\n\n\n\n\nNote\n\n\n\nThe video for this module uses the older get() approach (e.g. aes(x = get(input$xcol), y = get(input$ycol))), which also works. The .data[[]] pronoun is now the preferred approach as it is more explicit and integrates better with tidyverse tools.\n\n\nThe other thing we need to do is to add some special code to deal with the x- and y-axis labels because these are going to change every time the user selects a different variable. Here we are going to use the names() function to return the names of the the object selected in the vars vector of variable names. To make sure we get the right name from the vector, we are going to use the which() function. which() returns the value that satisfies a given function, in this case the index number of the vars vector that matches the user input. So for example, our x label will be defined as x = names(vars[which(vars == input$xcol)]. Here the number returned by [which(vars == input$xcol)] is going to be used to subset the vars list so that x displays the name of the variable selected by the user.\n\n# Define server logic required to draw a scatter plot\nserver &lt;- function(input, output, session) {\n  \n  # Render the plot\n  output$scatterplot &lt;- renderPlot({\n    \n    # ggplot call\n    ggplot(dem_data, aes(x = .data[[input$xcol]], y = .data[[input$ycol]])) +\n      geom_point(aes(color = region)) +\n      geom_smooth(method = \"loess\") +\n      scale_color_viridis_d(option = \"plasma\") +\n      theme_minimal() +\n      labs(\n        x =  names(vars[which(vars == input$xcol)]), # select names in vars that\n        y =  names(vars[which(vars == input$ycol)]), # match input selections\n        caption = \"Source: V-Dem Institute\",\n        color = \"Region\"\n      )\n  })\n}",
     "crumbs": [
       "Course Modules",
       "Module 5.1"

@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Your Name">
+<meta name="dcterms.date" content="2026-05-19">
 
 <title>Coding Assignment 1 – PSC/DATS 2102–Summer Schedule</title>
 <style>
@@ -19,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,10 +113,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Coding Assignment 1 – PSC/DATS 2102–Summer Schedule">
-<meta property="og:description" content="Homepage for PSC/DATS 2102, George Washington University.">
+<meta property="og:description" content="Wrangling Data">
 <meta property="og:site_name" content="PSC/DATS 2102--Summer Schedule">
 <meta name="twitter:title" content="Coding Assignment 1 – PSC/DATS 2102–Summer Schedule">
-<meta name="twitter:description" content="Homepage for PSC/DATS 2102, George Washington University.">
+<meta name="twitter:description" content="Wrangling Data">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -569,13 +606,26 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/coding-assignment-1.html">Coding Assignments</a></li><li class="breadcrumb-item"><a href="../assignments/coding-assignment-1.html">Coding Assignment 1</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Coding Assignment 1</h1>
+<p class="subtitle lead">Wrangling Data</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Your Name </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 19, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -588,18 +638,49 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>For this assignment, you are going to download some variables using the <code>wbstats</code> and <code>vdemdata</code> packages. Then you are going to wrangle these data and merge the two data sets into one and analyze how they relate to women’s representation in national parliaments. Do your work for each step in the code chunks provided. Be sure to label your code chunks.</p>
-<p><strong>Submission note</strong>: Accept the invitation on Blackboard to submit this assignment via GitHub.</p>
+<p>Here is a setup code chunk. You can load all of your packages here or as you go along in the code chunks below using the <code>library()</code> function. However, note that you really only need to load a library once per document.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wbstats)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vdemdata)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countrycode)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please refrain from <em>installing</em> any packages in your code chunks because this will also install them every time the code chunk is run or your document is rendered. This may not be desirable for you or whoever is looking at or running your code (e.g.&nbsp;me).</p>
+</div>
+</div>
 </section>
 <section id="step-1-download-data-from-v-dem-20pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-download-data-from-v-dem-20pts">Step 1: Download data from V-Dem (20pts)</h2>
 <p><em>Look at the V-Dem <a href="https://www.v-dem.net/data/reference-documents/">codebook</a>. Identify two measures of democracy that are not the polyarchy score that we used in Module 1.2.</em></p>
 <p><em>Try to pick variables that will relate to women’s representation and read the description of the variable to make sure that it includes data for a sufficient number of years, e.g.&nbsp;that the data will be somewhat recent. Select the most recent 20 years of data for your analysis.</em></p>
-<p><em>Make sure to load the packages that you need and <code>glimpse()</code> the data or <code>View()</code> it to make sure that it downloaded properly.</em></p>
+<p><em>Use <code>glimpse()</code> or <code>View()</code> to make sure that the data downloaded properly.</em></p>
 </section>
 <section id="step-2-download-data-from-the-world-bank-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-download-data-from-the-world-bank-20-pts">Step 2: Download data from the World Bank (20 pts)</h2>
 <p><em>Next, download the variable on women’s represenation that we used in Module 1.2 (“SG.GEN.PARL.ZS”) and at least one additional measure related to women’s empowerment. Go to the <a href="https://databank.worldbank.org/source/world-development-indicators">WDI</a> site the wb_search() function to identify relevant variables. Download the most recent 20 years of data for your analysis.</em></p>
-<p><em>Make sure that the indicator has enough data to conduct your analysis, i.e.&nbsp;that it has data for most countries and years.</em></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Try to make sure you download indicators with enough data to conduct your analysis. You won’t get great results if there are too many NAs.</p>
+</div>
+</div>
 </section>
 <section id="step-3-merge-the-data-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-merge-the-data-20-pts">Step 3: Merge the data (20 pts)</h2>
@@ -612,6 +693,33 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-5-interpret-your-data-20-pts" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-interpret-your-data-20-pts">Step 5: Interpret your data (20 pts)</h2>
 <p><em>Write a paragraph or so relating your insights to the Norris reading about electoral reform and women’s representation. Picking a handful of country cases from your data, how does your analysis relate to her arguments about the relevance of electoral systems, statutory quotas, reserved seats or voluntary quotas?</em></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Don’t write your paragraphs or any interpretation or analysis in a code chunk. Use markdown text. Quarto is designed to be a literate programming tool, so you can write your analysis in markdown text and include code chunks when necessary to support your argument.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Submission
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Render your document to HTML, then zip your entire project folder and submit it to Blackboard. You can work locally or on Posit Cloud. Either way, make sure the rendered HTML is included in the folder before zipping.</p>
+<p>Before submitting, feel free to delete any of the callout boxes in this document. Doing so will make your final document more legible and signals that you have read the instructions. You are also welcome to choose a different Quarto theme or apply other styling options in the YAML header to personalize your document.</p>
+</div>
+</div>
 
 
 </section>
