@@ -29,5 +29,14 @@ Now that you have a clear sense of where you are going with your app, it is time
 
 ## Step 6: Record a video or writeup your results
 
-*You have two options for presenting your app. You can post a five- to ten-minute video using a service like [Vimeo](https://vimeo.com/) or you can write two pages about your app.In your presentationk, talk about the main features of the app. What kinds of data can users explore and then also what kinds of patterns emerge from the data and what we learn from the visualization that we might not have thought of before.*
+*You have two options for presenting your app. You can post a five- to ten-minute video using a service like [Vimeo](https://vimeo.com/) or you can write two pages about your app. Talk about the main features of the app. What kinds of data can users explore and then also what patterns emerge from the data and what we learn from the visualization that we might not have thought of before.*
+
+::: {.callout-important}
+## Submission
+
+Submit the following to Blackboard:
+
+1. **Zipped project folder** — compress your project folder (containing `app.R` and any data files your app depends on) into a `.zip` file and upload it to Blackboard.
+2. **Live app link** — paste the URL of your published app on [shinyapps.io](https://www.shinyapps.io/) into the Blackboard submission text box.
+:::
 

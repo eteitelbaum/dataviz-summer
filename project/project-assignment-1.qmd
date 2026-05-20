@@ -22,4 +22,10 @@ For your final project in this course, you will be producing your very own Shiny
 
 *What would the user manipulate in your app? It could be a dropdown menu, a slider or some other control. See [here](https://shiny.posit.co/r/getstarted/shiny-basics/lesson3/) for a list of control widgets. When your user interacts with the control, what output will it produce, e.g. what will change when the user manipulates the widget? How would your chosen control widget enhance the user's experience and contribute to the overall purpose of the app?*
 
+::: {.callout-important}
+## Submission
+
+Render your document as a PDF or Word file and upload it to Blackboard. To render as a PDF, add `format: pdf` to your YAML header. Note that PDF rendering requires TinyTeX — if you haven't installed it yet, run `quarto install tinytex` in the terminal. To render as a Word document instead, use `format: docx`.
+:::
+
 

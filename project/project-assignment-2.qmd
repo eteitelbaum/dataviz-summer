@@ -30,8 +30,14 @@ For the first project assignment, you thought about some rough content for your 
 *What are the reactive functions of your server? Will you have just one reactive function for your plot call? Or will you need multiple reactive functions in order to coordinate different inputs, like dropdown menus that select a country case and a slider that selects a range of years?*
 
 
-## Step 6: How will you call your data for your visualization? 
+## Step 6: How will you call your data for your visualization?
 
 *What will be the basic variables that you will call in `aes()`? How specifically do you anticipate grabbing the data in a reactive context?*
+
+::: {.callout-important}
+## Submission
+
+Render your document as a PDF or Word file and upload it to Blackboard. To render as a PDF, add `format: pdf` to your YAML header. Note that PDF rendering requires TinyTeX — if you haven't installed it yet, run `quarto install tinytex` in the terminal. To render as a Word document instead, use `format: docx`.
+:::
 
 
