@@ -4,7 +4,7 @@ title: "Project Assignment 3"
 
 ## Overview
 
-Now that you have a clear sense of where you are going with your app, it is time to build it. This is the hard part and you will likely have to invest significant time in wrangling your data and debugging the app. Be patient! It will turn out great and you will have a nice project to show for it. 
+Now that you have a clear sense of where you are going with your app, it is time to build it. If you are working in a group, only one submission per group is needed. This is the hard part and you will likely have to invest significant time in wrangling your data and debugging the app. Be patient! It will turn out great and you will have a nice project to show for it. 
 
 ## Step 1: Setup
 

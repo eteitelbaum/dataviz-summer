@@ -4,7 +4,7 @@ title: "Project Assignment 1"
 
 ## Overview
 
-For your final project in this course, you will be producing your very own Shiny App. The purpose of this assignment is to get you to think through the basic content and layout off your app. As you will learn, Shiny Apps are comprised of two basic elements: a user interface and a server function. We are going to be focusing on the user interface side of things for now and later we will talk about how to generate the content for the user. What do you want your user to see and experience with your app? That is the question you will answer here. 
+For your final project in this course, you will be producing your very own Shiny App. This project may be completed individually or in groups of up to three students. The purpose of this assignment is to get you to think through the basic content and layout off your app. As you will learn, Shiny Apps are comprised of two basic elements: a user interface and a server function. We are going to be focusing on the user interface side of things for now and later we will talk about how to generate the content for the user. What do you want your user to see and experience with your app? That is the question you will answer here. 
 
 ## Step 1: Think about a layout for your app (25 pts.)
 

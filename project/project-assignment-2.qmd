@@ -2,9 +2,9 @@
 title: "Project Assignment 2"
 ---
 
-## Overview 
+## Overview
 
-For the first project assignment, you thought about some rough content for your app and how the user would produce some sort of visualization with it. For this assignment, we will take the next step and think about how we will generate that output on the server side. For this, we need to think concretely about what kind of setup or prework we need to do in the app.R file. Then we need to think about reactivity and how user input will change the output rendered by the app. We also want to think about any helper functions and externally sourced code that we want to include (although this is not imperative in every case).
+For the first project assignment, you thought about some rough content for your app and how the user would produce some sort of visualization with it. If you are working in a group, only one submission per group is needed. For this assignment, we will take the next step and think about how we will generate that output on the server side. For this, we need to think concretely about what kind of setup or prework we need to do in the app.R file. Then we need to think about reactivity and how user input will change the output rendered by the app. We also want to think about any helper functions and externally sourced code that we want to include (although this is not imperative in every case).
 
 ## Step 1: What packages you will need for your app?
 
